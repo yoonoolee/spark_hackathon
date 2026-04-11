@@ -14,7 +14,7 @@ def build_cold_start_profile(user: dict) -> str:
 
     return f"""GENERAL
 - Fitness level: {fitness}
-- Preferred session length: 30 min
+- Preferred session length: 60 min (default — updates from your history)
 - Always avoid: {dislikes}
 - Loves: {likes}
 

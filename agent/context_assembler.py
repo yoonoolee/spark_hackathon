@@ -2,6 +2,8 @@ from datetime import date
 import database as db
 from services.cycle import get_cycle_info, get_cycle_logs_for_user
 from services.profile import build_cold_start_profile
+from services.analytics import analyze_feedback_patterns, get_avg_duration
+from services.weather import get_weather
 
 
 def assemble_context(user_id: int, target_date: str = None) -> dict:
@@ -24,6 +26,10 @@ def assemble_context(user_id: int, target_date: str = None) -> dict:
 
     # Recent feedback
     feedback_history = db.get_feedback_for_phase(user_id, cycle_info.get("phase"), cycle_info.get("cycle_day"))
+
+    # Weather + streak
+    weather = get_weather(today)
+    streak = db.get_checkin_streak(user_id)
 
     # NL profile
     profile_summary = user.get("profile_summary", "").strip()
@@ -63,6 +69,10 @@ def assemble_context(user_id: int, target_date: str = None) -> dict:
             "readiness_avg":      phase_avgs.get("readiness_avg"),
             "steps_avg":          phase_avgs.get("steps_avg"),
         },
-        "recent_feedback": feedback_history[:10],
+        "recent_feedback": feedback_history[:12],
+        "pattern_analysis": analyze_feedback_patterns(user_id),
+        "avg_duration_mins": get_avg_duration(user_id),
+        "weather": weather,
+        "streak": streak,
         "date": today,
     }

@@ -1,156 +1,201 @@
 # Spark — Cycle-Synced Fitness Agent
 
-Personalized workout recommendations that learn *your* cycle, not just the textbook one.
+Personalized workout recommendations that learn your cycle, not just the textbook one.
 
-Most cycle apps give generic phase advice ("it's your luteal phase, do yoga"). Spark learns that one woman's luteal is another woman's high-energy week — because it tracks your personal patterns, not population averages.
-
----
-
-## How It Works
-
-Every day the app asks three questions (energy, soreness, mood) and returns your **top 3 workout suggestions**, ranked and explained. Each time you give feedback (👍 / 👎), your profile gets smarter. After a few cycles, suggestions reflect *you* — not just your phase.
+Most cycle apps give generic phase advice ("it's your luteal phase, do yoga"). Spark learns that everyone's cycle is different — because it tracks your personal patterns, not population averages.
 
 ---
 
 ## Architecture
 
 ```
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │                          FastAPI Backend                                │
-  │   GET /suggest   POST /checkin   POST /cycle   POST /feedback           │
-  └────────┬──────────────────────────────────────────────┬────────────────┘
-           │ GET /suggest                                  │ POST /checkin
-           │                                              │ POST /feedback
-           ▼                                              ▼
-  ┌─────────────────────┐                    ┌────────────────────────────┐
-  │      SQLite DB      │                    │      Profile Updater       │
-  │                     │                    │    (small Claude call)     │
-  │  users              │                    │                            │
-  │  ┌───────────────┐  │◄───────────────────│  current profile_summary   │
-  │  │profile_summary│  │  writes updated NL │  + today's check-in  OR   │
-  │  │  (NL text)    │  │  profile to DB     │  + new thumbs up/down      │
-  │  └───────────────┘  │                    │  → rewritten NL summary    │
-  │  checkins           │                    └────────────────────────────┘
-  │  cycle_logs         │
-  │  biometrics         │
-  │  suggestions        │
-  │  feedback           │
-  └──────────┬──────────┘
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │                           FastAPI Backend                                │
+  │  GET /suggest  POST /checkin  POST /cycle  POST /biometrics              │
+  │  POST /suggestions/{id}/feedback  GET /users/{id}  GET /users/{id}/history│
+  └────────┬─────────────────────────────────────────────┬───────────────────┘
+           │ GET /suggest                                 │ POST /checkin
+           │                                             │ POST /feedback
+           ▼                                             ▼
+  ┌──────────────────────┐                 ┌─────────────────────────────────┐
+  │      SQLite DB       │                 │        Profile Updater          │
+  │                      │                 │      (small Claude call)        │
+  │  users               │                 │                                 │
+  │  ┌────────────────┐  │◄────────────────│  current profile_summary        │
+  │  │profile_summary │  │  writes updated │  + new check-in data  OR        │
+  │  │ (NL, by phase) │  │  NL profile     │  + new feedback (phase-tagged)  │
+  │  └────────────────┘  │                 │  → rewrites relevant phase      │
+  │  checkins            │                 │    section + recent feedback     │
+  │  cycle_logs          │                 └─────────────────────────────────┘
+  │  biometric_snapshots │
+  │  workout_suggestions │
+  │  feedback            │
+  │  (phase + cycle_day) │
+  └──────────┬───────────┘
              │ reads all context
              ▼
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │                    Step 1: Context Preparation  (Python, no LLM)        │
-  │                                                                         │
-  │   cycle day + phase + days until period                                 │
-  │   today's check-in:  energy / soreness / mood                          │
-  │   today's biometrics: HRV, sleep score vs personal phase averages      │
-  │   recent feedback history for this phase window                        │
-  │   hard constraints: workout dislikes                                    │
-  │   NL profile summary  ──────────────────────────────────┐              │
-  └───────────────────────────────────────────┬─────────────┼──────────────┘
-                                              │             │
-                                              ▼             │
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │               Step 2: Reasoning Agent  (Claude sonnet-4-6)              │
-  │                                                                         │
-  │  SYSTEM: expert in female physiology + cycle-synced fitness             │
-  │                                                                         │
-  │  USER PROFILE (structured NL) ◄────────────────────────────────────┘   │
-  │    GENERAL: intermediate, 30 min, avoid: swimming/HIIT                  │
-  │    MENSTRUAL: prefers rest day 1, short walks from day 2                │
-  │    FOLLICULAR: rising energy, enjoys vinyasa + moderate cardio          │
-  │    OVULATORY: peak energy, prefers structured classes                   │
-  │    LUTEAL: energy low days 20+, yoga 4.8/5, cardio rated poorly         │
-  │    RECENT: 👎 strength training day 22 · 👍 yin yoga day 24            │
-  │                                                                         │
-  │  WHERE SHE IS TODAY                                                     │
-  │    Cycle day 22 · luteal phase · 6 days until period                   │
-  │    Energy 2/5 · Soreness 3/5 · Mood: anxious                           │
-  │    HRV 42 (luteal avg: 48) · Sleep 71/100                              │
-  │                                                                         │
-  │  HARD CONSTRAINTS:  never suggest → ["swimming", "HIIT"]               │
-  │  PHASE FALLBACK:    luteal defaults if no personal history              │
-  │                                                                         │
-  │  → returns top 3 ranked suggestions                                     │
-  └───────────────────────────────┬─────────────────────────────────────────┘
-                                  │
-                                  ▼
-              ┌───────────────────────────────────────┐
-              │         Top 3 Suggestions             │
-              │                                       │
-              │  #1  yin yoga · restorative flow      │
-              │      30 min · low intensity           │
-              │      "HRV below luteal avg + low      │
-              │       energy — yoga rated 4.8/5       │
-              │       in this window for you"         │
-              │                                       │
-              │  #2  walking · easy flat walk         │
-              │      25 min · low intensity           │
-              │                                       │
-              │  #3  pilates · mat core focus         │
-              │      30 min · low-medium              │
-              │                                       │
-              │  👍 / 👎  per suggestion              │
-              └───────────────────────────────────────┘
-                              │ feedback
-                              ▼
-                   triggers Profile Updater
-                   NL profile gets smarter
-                   next /suggest is better
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │               Step 1: Context Preparation  (Python, no LLM)             │
+  │                                                                          │
+  │   cycle day + phase + days until period                                  │
+  │   check-in: energy / soreness / mood                                    │
+  │   biometrics: HRV, sleep, BBT, stress, readiness, steps (vs phase avgs) │
+  │   weather: temp, condition, outdoor-friendly (mocked, seasonal)          │
+  │   avg workout duration (from liked history, default 60 min)              │
+  │   checkin streak (consecutive days)                                      │
+  │   recent feedback (phase-tagged, 1=liked / 0=not liked)                 │
+  │   NL profile summary (structured by phase)  ──────────────┐             │
+  └──────────────────────────────────┬───────────────────────┼─────────────┘
+                                     │                        │
+                                     ▼                        │
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │               Step 2: Pattern Analysis  (Python, no LLM)                │
+  │                                                                          │
+  │   computed from full personal feedback history only                      │
+  │   • like rate per workout type overall                                   │
+  │   • like rate per workout type per phase                                 │
+  │   • like rate vs energy level (high / low)                               │
+  │   • like rate vs mood (positive / negative)                              │
+  │   • late luteal avoidance patterns (day 20+)                             │
+  │                                                                          │
+  │   e.g. "yoga: liked 88% overall — 100% when energy low,                 │
+  │          100% when negative mood"                                        │
+  │         "barre: liked 21% — late luteal (day 20+): 0%"                  │
+  └──────────────────────────────────┬───────────────────────────────────────┘
+                                     │ PatternSummary
+                                     ▼
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │               Step 3: Reasoning Agent  (Claude sonnet-4-6)               │
+  │                                                                          │
+  │  USER PROFILE (structured NL, by phase) ◄─────────────────────────────┘ │
+  │    GENERAL: intermediate, avg 46 min, avoid: swimming/HIIT               │
+  │    LUTEAL: energy low days 20+, yoga 88% liked, barre 0% late luteal     │
+  │    RECENT: 0 strength training [luteal day 22] · 1 yin yoga [luteal 18]  │
+  │                                                                          │
+  │  WHERE SHE IS TODAY                                                      │
+  │    Cycle day 22 · LUTEAL · 6 days until period                           │
+  │    Energy 2/5 · Soreness 3/5 · Mood: anxious                            │
+  │    HRV: 42 (avg: 50, -16%) · Sleep: 71/100 · Readiness: 62/100          │
+  │    Stress: 55/100 · BBT: 98.3°F · Steps: 5200 (avg: 6500, -20%)         │
+  │    Weather: 57°F, sunny (good for outdoor)                               │
+  │                                                                          │
+  │  PATTERN ANALYSIS                                                        │
+  │    yoga: 88% liked — 100% when energy low, 100% negative mood           │
+  │    barre: 21% liked — late luteal: 0%, low energy: 0%                   │
+  │    ...                                                                   │
+  │                                                                          │
+  │  HARD CONSTRAINTS: never suggest → ["swimming", "HIIT"]                 │
+  │                                                                          │
+  │  → returns 5 ranked suggestions                                          │
+  └──────────────────────────────────┬───────────────────────────────────────┘
+                                     │
+                                     ▼
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │                         API Response                                     │
+  │                                                                          │
+  │  top          → rank 1 only  (main page)                                │
+  │  suggestions  → all 5        (full list page)                            │
+  │  checkin_streak, cycle, weather included                                 │
+  │                                                                          │
+  │  each suggestion:                                                        │
+  │  {                                                                       │
+  │    rank, type, description, duration_mins (15-min increments),           │
+  │    intensity (low/medium/high), specific_suggestion,                     │
+  │    reasoning: {                                                          │
+  │      energy:  "low (2/5)",                                               │
+  │      hrv:     "below average (-16%)",                                    │
+  │      weather: "sunny, outdoors ok"                                       │
+  │    }                                                                     │
+  │  }                                                                       │
+  └──────────────────────────────────┬───────────────────────────────────────┘
+                                     │ user thumbs up / down (1 or 0)
+                                     ▼
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │                          Feedback Loop                                   │
+  │                                                                          │
+  │  POST /suggestions/{id}/feedback  { liked: 0 or 1 }                     │
+  │  stored with phase + cycle_day                                           │
+  │       +                                                                  │
+  │  POST /users/{id}/checkin  { energy, soreness, mood }                   │
+  │       │                                                                  │
+  │       ▼                                                                  │
+  │  Profile Updater (Claude call)                                           │
+  │  → rewrites relevant phase section of profile_summary                   │
+  │  → updates RECENT FEEDBACK block                                         │
+  │  → richer context on next /suggest                                       │
+  └──────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
 ## User Profile (NL, structured by phase)
 
-Each user has a `profile_summary` — a natural language snapshot updated after every check-in and feedback. Starts from science-based defaults, gets personal over time.
+Stored in `users.profile_summary`. Starts from science defaults, updated after every check-in and feedback via a small Claude call. Each phase is independent.
 
 ```
 GENERAL
 - Fitness level: intermediate
-- Preferred session length: 30 min
+- Preferred session length: 46 min (from history)
 - Always avoid: swimming, HIIT
 - Loves: yoga, pilates, walking
 
 MENSTRUAL PHASE (days ~1–5)
 - Typical energy: low
 - Default workouts: yin yoga, walking, mat pilates, foam rolling
-- Personal notes: prefers rest on day 1, short walks from day 2
+- Personal notes: prefers rest day 1, short walks from day 2
 
 FOLLICULAR PHASE (days ~6–13)
 - Typical energy: rising
 - Default workouts: running, cardio, power vinyasa
-- Personal notes: [building up — not enough data yet]
+- Personal notes: enjoys vinyasa + moderate cardio, energy builds mid-week
 
 OVULATORY PHASE (days ~14–16)
 - Typical energy: peak
 - Default workouts: cycling, HIIT, crossfit, bootcamp
-- Personal notes: tends to prefer structured classes over open cardio
+- Personal notes: prefers structured classes over solo cardio
 
 LUTEAL PHASE (days ~17–28)
-- Typical energy: low, especially days 20+
-- Default workouts: strength training, low incline walking, yoga, barre, pilates
-- Personal notes: energy drops noticeably days 20–28; consistently rates
-  cardio poorly here; yoga rated 4.8/5 in this window
+- Typical energy: declining, especially days 20+
+- Default workouts: yoga, pilates, low incline walking, barre
+- Personal notes: yoga and pilates rated highest; barre and strength
+  rated poorly, especially late luteal (day 20+)
 
 RECENT FEEDBACK
-- 👎 strength training (luteal day 22) — "felt awful"
-- 👍 yin yoga (luteal day 24)
-- 👍 walking (luteal day 20)
+- 1  yin yoga [luteal day 18]
+- 1  low incline walking [luteal day 21]
+- 0  strength training [luteal day 22]
+- 0  barre [luteal day 20]
 ```
 
 ---
 
 ## Phase Science Baseline
 
-Used as defaults for new users (cold start). Personal patterns override these once data builds up.
+Used as defaults at cold start. Personal patterns override once data builds up.
 
-| Phase | Days | Energy | Recommended Workouts |
-|-------|------|--------|----------------------|
+| Phase | Days | Energy | Default Workouts |
+|-------|------|--------|-----------------|
 | Menstrual | ~1–5 | Low | Walking, yin yoga, mat pilates, foam rolling |
 | Follicular | ~6–13 | Rising | Running, cardio, power vinyasa, swimming |
 | Ovulatory | ~14–16 | Peak | Cycling, HIIT, crossfit, bootcamp |
 | Luteal | ~17–28 | Declining | Strength training, low incline walking, yoga, barre, pilates |
+
+---
+
+## Biometrics Tracked
+
+| Metric | Description |
+|--------|-------------|
+| HRV | Heart rate variability — recovery signal |
+| Resting HR | Baseline heart rate |
+| Sleep score | 0–100 composite |
+| Sleep hours | Total sleep |
+| BBT | Basal body temperature — rises after ovulation |
+| Stress score | 0–100 (lower = less stressed) |
+| Readiness score | 0–100 Oura/Whoop-style composite |
+| Steps | Previous day activity level |
+
+All compared to personal phase averages, not population norms.
 
 ---
 
@@ -160,81 +205,67 @@ Used as defaults for new users (cold start). Personal patterns override these on
 |--------|------|-------------|
 | GET | `/users` | List users |
 | POST | `/users` | Create user |
-| GET | `/users/{id}` | Profile + pattern summary |
+| GET | `/users/{id}` | Profile + cycle info + checkin streak |
 | PATCH | `/users/{id}/preferences` | Update workout likes/dislikes |
-| POST | `/users/{id}/checkin` | Log today's energy (1–5), soreness (1–5), mood |
+| POST | `/users/{id}/checkin` | Log energy (1–5), soreness (1–5), mood |
 | POST | `/users/{id}/cycle` | Log period start date |
-| POST | `/users/{id}/biometrics` | Log today's HRV/sleep |
-| GET | `/users/{id}/suggest` | Run agent → top 3 suggestions |
-| POST | `/suggestions/{id}/feedback` | Thumbs up/down (`{"liked": true/false}`) |
+| POST | `/users/{id}/biometrics` | Log today's biometrics |
+| GET | `/users/{id}/suggest` | Run agent → top + all 5 suggestions |
+| POST | `/suggestions/{id}/feedback` | Thumbs up/down `{"liked": true/false}` |
 | GET | `/users/{id}/history` | Past suggestions + feedback |
 
 ---
 
 ## Demo Users
 
-Two pre-seeded users with 1 year of history showing contrasting patterns:
-
 **Alex** (user id: 1) — standard cycle pattern
 - Loves yoga, pilates, walking. Dislikes HIIT and swimming.
 - Energy drops in late luteal. High-intensity workouts rated poorly in that window.
+- Average session: ~46 min.
 
 **Jordan** (user id: 2) — non-standard pattern
 - Loves strength training, HIIT, cycling. Dislikes yoga and barre.
-- Stays high-intensity even in luteal — her data shows she performs well regardless.
-- Demonstrates the app overriding phase defaults based on personal history.
+- Maintains high intensity even in luteal — her data overrides phase defaults.
+- Average session: ~49 min.
+
+Both seeded with 1 year of history (~365 check-ins, biometrics, ~300 workout ratings).
 
 ---
 
 ## Setup
-
-### Requirements
-- Python 3.10+
-- An Anthropic API key
-
-### Install
 
 ```bash
 git clone https://github.com/yoonoolee/spark_hackathon.git
 cd spark_hackathon
 
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate
 
 pip install -r requirements.txt
-```
-
-### Configure
-
-```bash
 cp .env.example .env
-# Add your ANTHROPIC_API_KEY to .env
-```
+# add ANTHROPIC_API_KEY to .env
 
-### Generate mock data + run
-
-```bash
-python generate_mock_data.py   # creates data/ JSON files
-uvicorn main:app --reload      # seeds DB on startup, serves on :8000
+python generate_mock_data.py
+uvicorn main:app --reload
 ```
 
 ### Try it
 
 ```bash
-# Get top 3 suggestions for Alex today
+# Top suggestion + all 5 for Alex
 curl http://localhost:8000/users/1/suggest
 
-# Submit a daily check-in
+# Daily check-in
 curl -X POST http://localhost:8000/users/1/checkin \
   -H "Content-Type: application/json" \
-  -d '{"energy": 3, "soreness": 2, "mood": "motivated"}'
+  -d '{"energy": 2, "soreness": 3, "mood": "anxious"}'
 
-# Thumbs up the first suggestion
+# Thumbs down a suggestion
 curl -X POST http://localhost:8000/suggestions/1/feedback \
   -H "Content-Type: application/json" \
-  -d '{"liked": true}'
+  -d '{"liked": false, "workout_type": "strength training"}'
 
-# Compare — Jordan gets different suggestions for the same cycle day
+# Jordan — different suggestions same cycle day (personal history overrides phase defaults)
 curl http://localhost:8000/users/2/suggest
 ```
 
@@ -248,4 +279,5 @@ curl http://localhost:8000/users/2/suggest
 | LLM | Claude API (claude-sonnet-4-6) |
 | Database | SQLite (runtime, seeded from JSON) |
 | Mock data | JSON files in `data/` (committed to repo) |
+| Weather | Mocked, seasonal + deterministic per date |
 | Biometrics | Mocked (mirrors HealthKit structure) |

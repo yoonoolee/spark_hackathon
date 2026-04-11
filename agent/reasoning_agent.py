@@ -54,13 +54,21 @@ def build_prompt(ctx: dict) -> str:
     ]))
     bio_str = "\n".join(bio_parts) if bio_parts else "No biometric data available"
 
-    # Recent feedback — phase-specific first, then cross-phase
+    # Weather
+    weather = ctx.get("weather", {})
+    weather_str = (
+        f"{weather.get('temp_f')}°F, {weather.get('condition')} "
+        f"({'good for outdoor' if weather.get('outdoor_friendly') else 'not ideal for outdoor'})"
+        if weather else "unavailable"
+    )
+
+    # Recent feedback — phase-specific first, then cross-phase (1=liked, 0=not liked)
     feedback_lines = []
     for f in ctx.get("recent_feedback", [])[:12]:
-        icon = "👍" if f["liked"] else "👎"
+        val = "1" if f["liked"] else "0"
         phase_tag = f"  [{f['phase']} day {f['cycle_day']}]" if f.get("phase") else ""
         note_tag = f" — \"{f['note']}\"" if f.get("note") else ""
-        feedback_lines.append(f"  {icon} {f['workout_type']}{phase_tag}{note_tag}")
+        feedback_lines.append(f"  {val}  {f['workout_type']}{phase_tag}{note_tag}")
     feedback_str = "\n".join(feedback_lines) if feedback_lines else "  No feedback yet"
 
     # Phase fallback baselines
@@ -75,23 +83,30 @@ Spark gives personalized workout recommendations that learn your cycle, not just
 Most cycle apps give generic phase advice. Spark learns that everyone's cycle is different —
 because it tracks personal patterns, not population averages.
 
-Your job is to suggest the 3 best workouts for this user TODAY based on where she is in her cycle and her personal patterns.
+Your job is to suggest the 5 best workouts for this user TODAY based on where she is in her cycle and her personal patterns.
 Personal history and patterns ALWAYS override generic phase guidelines.
 Never suggest workouts the user dislikes.
-Use feedback patterns to infer preferences — if she consistently skips or rates something poorly across phases, treat it as a general dislike even if not listed explicitly.
+Use feedback patterns to infer preferences — if she consistently rates something poorly across phases, treat it as a general dislike even if not listed explicitly.
+If weather is not outdoor-friendly, deprioritize outdoor workouts.
 
 ---
 USER PROFILE:
 {user['profile_summary']}
 
 ---
+PREFERRED WORKOUT DURATION: ~{ctx.get('avg_duration_mins', 60)} min (based on her history)
+
 WHERE SHE IS TODAY ({ctx['date']}):
 {cycle_str}
 {checkin_str}
 {bio_str}
+Weather: {weather_str}
 
-RECENT FEEDBACK:
+RECENT FEEDBACK (1=liked, 0=not liked):
 {feedback_str}
+
+PATTERN ANALYSIS (computed from full feedback history):
+{ctx.get("pattern_analysis", "No patterns yet.")}
 
 HARD CONSTRAINTS — never suggest these: {dislikes_str}
 
@@ -99,16 +114,20 @@ PHASE SCIENCE FALLBACK (use only if personal history is absent for this phase):
 {phase.upper()} defaults: {fallback}
 
 ---
-Return ONLY a JSON array of exactly 3 workout suggestions, ranked best to worst fit for today.
+Return ONLY a JSON array of exactly 5 workout suggestions, ranked best to worst fit for today.
 Each suggestion must follow this exact structure:
 {{
   "rank": 1,
   "type": "<workout category>",
   "description": "<3-6 word style descriptor>",
-  "duration_mins": <number>,
-  "intensity": "<low | low-medium | medium | medium-high | high>",
+  "duration_mins": <must be a multiple of 15, e.g. 15, 30, 45, 60, 75, 90>,
+  "intensity": "<low | medium | high>",
   "specific_suggestion": "<one concrete sentence of what to do>",
-  "reasoning": "<1-2 sentences referencing her specific data, not generic advice>"
+  "reasoning": {{
+    "energy": "<1-3 words, e.g. 'low (2/5)'>",
+    "hrv": "<1-3 words, e.g. 'below average (-16%)'>",
+    "weather": "<1-3 words, e.g. 'rainy, indoors'>"
+  }}
 }}
 
 Return only the JSON array, no explanation or markdown."""
@@ -119,7 +138,7 @@ def get_suggestions(ctx: dict) -> list:
 
     response = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=1200,
+        max_tokens=1500,
         messages=[{"role": "user", "content": prompt}]
     )
 

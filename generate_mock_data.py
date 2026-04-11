@@ -26,6 +26,26 @@ PHASE_BASELINES = {
 
 MOODS = ["energized", "calm", "motivated", "tired", "anxious", "happy", "neutral", "sluggish"]
 
+WORKOUT_DURATIONS = {
+    "walking":            30,
+    "low incline walking": 30,
+    "foam rolling":       15,
+    "yin yoga":           60,
+    "mat pilates":        45,
+    "pilates":            45,
+    "barre":              60,
+    "yoga":               60,
+    "power vinyasa":      60,
+    "running":            45,
+    "cardio":             45,
+    "swimming":           45,
+    "cycling":            45,
+    "strength training":  60,
+    "HIIT":               30,
+    "crossfit":           60,
+    "bootcamp":           60,
+}
+
 
 def get_phase(cycle_day: int, cycle_length: int = 28) -> str:
     ratio = cycle_length / 28
@@ -118,10 +138,10 @@ def alex_workout_and_liked(phase: str, cycle_day: int, energy: int) -> tuple[dic
     workout = random.choice(candidates)
     intensity_map = {
         "menstrual": "low", "follicular": "medium", "ovulatory": "high",
-        "luteal": "low" if cycle_day >= 20 else "low-medium"
+        "luteal": "low" if cycle_day >= 20 else "medium"
     }
     intensity = intensity_map[phase]
-    duration = random.choice([25, 30, 35, 40])
+    duration = WORKOUT_DURATIONS.get(workout, 45)
 
     # Liked: high probability for yoga/pilates in luteal, low for strength in late luteal
     if phase == "luteal" and cycle_day >= 20:
@@ -190,7 +210,7 @@ def jordan_workout_and_liked(phase: str, cycle_day: int, energy: int) -> tuple[d
     # Jordan dislikes yoga and barre
     workout = random.choice(candidates)
     intensity = "high" if phase in ["ovulatory", "luteal"] else "medium"
-    duration = random.choice([30, 40, 45, 50])
+    duration = WORKOUT_DURATIONS.get(workout, 45)
 
     # Jordan rates her preferred workouts highly across all phases
     liked = workout in ["HIIT", "strength training", "cycling", "crossfit"]

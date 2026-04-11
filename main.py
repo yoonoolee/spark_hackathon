@@ -110,7 +110,8 @@ def get_user(user_id: int):
         raise HTTPException(404, "User not found")
     cycle_logs = get_cycle_logs_for_user(user_id)
     cycle_info = get_cycle_info(cycle_logs, user["cycle_length_avg"])
-    return {**user, "cycle": cycle_info}
+    streak = db.get_checkin_streak(user_id)
+    return {**user, "cycle": cycle_info, "checkin_streak": streak}
 
 
 @app.patch("/users/{user_id}/preferences")
@@ -209,6 +210,9 @@ def suggest(user_id: int, target_date: Optional[str] = None):
             "suggestion_id": suggestion_id,
             "date": ctx["date"],
             "cycle": ctx["cycle"],
+            "weather": ctx["weather"],
+            "checkin_streak": ctx["streak"],
+            "top": suggestions[0],
             "suggestions": suggestions,
         }
     except Exception as e:

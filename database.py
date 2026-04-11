@@ -288,6 +288,30 @@ def update_profile_summary(user_id: int, profile_summary: str):
     conn.close()
 
 
+def get_checkin_streak(user_id: int) -> int:
+    """Returns number of consecutive days the user has submitted a check-in up to today."""
+    from datetime import date, timedelta
+    conn = get_db()
+    rows = conn.execute("""
+        SELECT date FROM checkins WHERE user_id = ?
+        ORDER BY date DESC
+    """, (user_id,)).fetchall()
+    conn.close()
+
+    if not rows:
+        return 0
+
+    dates = {r["date"] for r in rows}
+    streak = 0
+    current = date.today()
+
+    while current.isoformat() in dates:
+        streak += 1
+        current -= timedelta(days=1)
+
+    return streak
+
+
 def get_user_history(user_id: int, limit: int = 30):
     conn = get_db()
     rows = conn.execute("""
