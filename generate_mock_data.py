@@ -92,6 +92,20 @@ def alex_sleep(phase: str) -> tuple[float, float]:
     return score, hours
 
 
+def alex_extra_biometrics(phase: str) -> dict:
+    # BBT rises after ovulation (luteal phase)
+    bbt_base = {"menstrual": 97.4, "follicular": 97.5, "ovulatory": 97.8, "luteal": 98.3}[phase]
+    stress_base = {"menstrual": 55, "follicular": 35, "ovulatory": 30, "luteal": 50}[phase]
+    readiness_base = {"menstrual": 62, "follicular": 78, "ovulatory": 82, "luteal": 65}[phase]
+    steps_base = {"menstrual": 5500, "follicular": 8000, "ovulatory": 9000, "luteal": 6500}[phase]
+    return {
+        "bbt": round(bbt_base + random.uniform(-0.2, 0.2), 2),
+        "stress_score": round(max(10, min(100, stress_base + random.uniform(-10, 10))), 1),
+        "readiness_score": round(max(30, min(100, readiness_base + random.uniform(-8, 8))), 1),
+        "steps": max(1000, int(steps_base + random.randint(-1500, 1500))),
+    }
+
+
 def alex_workout_and_liked(phase: str, cycle_day: int, energy: int) -> tuple[dict, bool]:
     candidates = {
         "menstrual":  ["walking", "yin yoga", "mat pilates", "foam rolling"],
@@ -149,6 +163,19 @@ def jordan_sleep(phase: str) -> tuple[float, float]:
     score = round(max(55, min(100, base + random.uniform(-6, 6))), 1)
     hours = round(random.uniform(6.5, 8.5), 1)
     return score, hours
+
+
+def jordan_extra_biometrics(phase: str) -> dict:
+    bbt_base = {"menstrual": 97.3, "follicular": 97.6, "ovulatory": 97.9, "luteal": 98.4}[phase]
+    stress_base = {"menstrual": 45, "follicular": 30, "ovulatory": 28, "luteal": 40}[phase]
+    readiness_base = {"menstrual": 68, "follicular": 82, "ovulatory": 88, "luteal": 76}[phase]
+    steps_base = {"menstrual": 7000, "follicular": 10000, "ovulatory": 12000, "luteal": 9000}[phase]
+    return {
+        "bbt": round(bbt_base + random.uniform(-0.2, 0.2), 2),
+        "stress_score": round(max(10, min(100, stress_base + random.uniform(-8, 8))), 1),
+        "readiness_score": round(max(40, min(100, readiness_base + random.uniform(-7, 7))), 1),
+        "steps": max(2000, int(steps_base + random.randint(-2000, 2000))),
+    }
 
 
 def jordan_workout_and_liked(phase: str, cycle_day: int, energy: int) -> tuple[dict, bool]:
@@ -253,7 +280,7 @@ RECENT FEEDBACK
 
 def generate_user_data(
     user_id, name, cycle_length_avg, jitter,
-    energy_fn, hrv_fn, sleep_fn, workout_fn, soreness_fn=None
+    energy_fn, hrv_fn, sleep_fn, workout_fn, extra_bio_fn, soreness_fn=None
 ):
     cycle_logs = generate_cycle_logs(START_DATE, END_DATE, cycle_length_avg, jitter)
     checkins, biometrics, history = [], [], []
@@ -267,6 +294,7 @@ def generate_user_data(
         hrv = hrv_fn(phase)
         sleep_score, sleep_hours = sleep_fn(phase)
         resting_hr = round(random.uniform(58, 72), 1)
+        extra = extra_bio_fn(phase)
 
         checkins.append({
             "date": d.isoformat(),
@@ -281,6 +309,7 @@ def generate_user_data(
             "resting_hr": resting_hr,
             "sleep_score": sleep_score,
             "sleep_hours": sleep_hours,
+            **extra,
         })
 
         # ~80% of days have a workout
@@ -288,6 +317,8 @@ def generate_user_data(
             suggestion, liked = workout_fn(phase, cycle_day, energy)
             history.append({
                 "date": d.isoformat(),
+                "phase": phase,
+                "cycle_day": cycle_day,
                 "suggestion": suggestion,
                 "liked": liked,
             })
@@ -306,6 +337,7 @@ def main():
         hrv_fn=alex_hrv,
         sleep_fn=alex_sleep,
         workout_fn=alex_workout_and_liked,
+        extra_bio_fn=alex_extra_biometrics,
         soreness_fn=alex_soreness,
     )
 
@@ -315,6 +347,7 @@ def main():
         hrv_fn=jordan_hrv,
         sleep_fn=jordan_sleep,
         workout_fn=jordan_workout_and_liked,
+        extra_bio_fn=jordan_extra_biometrics,
     )
 
     users = [

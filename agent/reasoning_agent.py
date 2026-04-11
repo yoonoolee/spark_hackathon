@@ -33,25 +33,34 @@ def build_prompt(ctx: dict) -> str:
         checkin_str = "No check-in logged today"
 
     # Biometrics section
-    bio_parts = []
-    if bio["hrv"] is not None:
-        hrv_note = ""
-        if bio["hrv_phase_avg"]:
-            diff_pct = round((bio["hrv"] - bio["hrv_phase_avg"]) / bio["hrv_phase_avg"] * 100)
-            hrv_note = f" (phase avg: {bio['hrv_phase_avg']}, {'+' if diff_pct >= 0 else ''}{diff_pct}%)"
-        bio_parts.append(f"HRV: {bio['hrv']}{hrv_note}")
-    if bio["sleep_score"] is not None:
-        sleep_note = f" (avg: {bio['sleep_avg']})" if bio["sleep_avg"] else ""
-        bio_parts.append(f"Sleep: {bio['sleep_score']}/100{sleep_note}")
-    if bio["sleep_hours"] is not None:
-        bio_parts.append(f"Sleep hours: {bio['sleep_hours']}")
-    bio_str = " | ".join(bio_parts) if bio_parts else "No biometric data available"
+    def fmt_metric(label, val, avg, unit=""):
+        if val is None:
+            return None
+        note = ""
+        if avg:
+            diff_pct = round((val - avg) / avg * 100)
+            note = f" (avg: {avg}{unit}, {'+' if diff_pct >= 0 else ''}{diff_pct}%)"
+        return f"{label}: {val}{unit}{note}"
 
-    # Recent feedback
+    bio_parts = list(filter(None, [
+        fmt_metric("HRV", bio.get("hrv"), bio.get("hrv_phase_avg")),
+        fmt_metric("Sleep score", bio.get("sleep_score"), bio.get("sleep_avg"), "/100"),
+        fmt_metric("Sleep hours", bio.get("sleep_hours"), None, "h"),
+        fmt_metric("Readiness", bio.get("readiness_score"), bio.get("readiness_avg"), "/100"),
+        fmt_metric("Stress", bio.get("stress_score"), bio.get("stress_avg"), "/100"),
+        fmt_metric("BBT", bio.get("bbt"), None, "°F") if bio.get("bbt") else None,
+        fmt_metric("Steps yesterday", bio.get("steps"), bio.get("steps_avg")),
+        fmt_metric("Resting HR", bio.get("resting_hr"), None, "bpm"),
+    ]))
+    bio_str = "\n".join(bio_parts) if bio_parts else "No biometric data available"
+
+    # Recent feedback — phase-specific first, then cross-phase
     feedback_lines = []
-    for f in ctx.get("recent_feedback", [])[:8]:
+    for f in ctx.get("recent_feedback", [])[:12]:
         icon = "👍" if f["liked"] else "👎"
-        feedback_lines.append(f"  {icon} {f['workout_type']}")
+        phase_tag = f"  [{f['phase']} day {f['cycle_day']}]" if f.get("phase") else ""
+        note_tag = f" — \"{f['note']}\"" if f.get("note") else ""
+        feedback_lines.append(f"  {icon} {f['workout_type']}{phase_tag}{note_tag}")
     feedback_str = "\n".join(feedback_lines) if feedback_lines else "  No feedback yet"
 
     # Phase fallback baselines
@@ -61,10 +70,15 @@ def build_prompt(ctx: dict) -> str:
     dislikes_str = ", ".join(user["dislikes"]) if user["dislikes"] else "none"
 
     return f"""You are an expert in female physiology and cycle-synced fitness coaching.
-Your job is to suggest the 3 best workouts for this user TODAY based on where she is in her cycle and her personal patterns.
 
+Spark gives personalized workout recommendations that learn your cycle, not just the textbook one.
+Most cycle apps give generic phase advice. Spark learns that everyone's cycle is different —
+because it tracks personal patterns, not population averages.
+
+Your job is to suggest the 3 best workouts for this user TODAY based on where she is in her cycle and her personal patterns.
 Personal history and patterns ALWAYS override generic phase guidelines.
 Never suggest workouts the user dislikes.
+Use feedback patterns to infer preferences — if she consistently skips or rates something poorly across phases, treat it as a general dislike even if not listed explicitly.
 
 ---
 USER PROFILE:

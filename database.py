@@ -54,6 +54,10 @@ def init_db():
             resting_hr REAL,
             sleep_score REAL,
             sleep_hours REAL,
+            bbt REAL,
+            stress_score REAL,
+            readiness_score REAL,
+            steps INTEGER,
             UNIQUE(user_id, date),
             FOREIGN KEY (user_id) REFERENCES users(id)
         );
@@ -73,6 +77,9 @@ def init_db():
             user_id INTEGER NOT NULL,
             workout_type TEXT,
             liked INTEGER NOT NULL,
+            phase TEXT,
+            cycle_day INTEGER,
+            note TEXT,
             created_at TEXT DEFAULT (datetime('now')),
             FOREIGN KEY (suggestion_id) REFERENCES workout_suggestions(id)
         );
@@ -125,8 +132,8 @@ def seed_from_json():
             (
                 "biometric_snapshots",
                 f"{username}_biometrics.json",
-                "(user_id, date, hrv, resting_hr, sleep_score, sleep_hours)",
-                lambda r, uid=user_id: (uid, r["date"], r["hrv"], r["resting_hr"], r["sleep_score"], r["sleep_hours"])
+                "(user_id, date, hrv, resting_hr, sleep_score, sleep_hours, bbt, stress_score, readiness_score, steps)",
+                lambda r, uid=user_id: (uid, r["date"], r["hrv"], r["resting_hr"], r["sleep_score"], r["sleep_hours"], r.get("bbt"), r.get("stress_score"), r.get("readiness_score"), r.get("steps"))
             ),
         ]:
             path = DATA_DIR / file_key
@@ -154,9 +161,10 @@ def seed_from_json():
                 suggestion_id = c.lastrowid
                 if "liked" in entry:
                     c.execute("""
-                        INSERT INTO feedback (suggestion_id, user_id, workout_type, liked)
-                        VALUES (?, ?, ?, ?)
-                    """, (suggestion_id, user_id, entry["suggestion"].get("type"), 1 if entry["liked"] else 0))
+                        INSERT INTO feedback (suggestion_id, user_id, workout_type, liked, phase, cycle_day)
+                        VALUES (?, ?, ?, ?, ?, ?)
+                    """, (suggestion_id, user_id, entry["suggestion"].get("type"), 1 if entry["liked"] else 0,
+                          entry.get("phase"), entry.get("cycle_day")))
 
     conn.commit()
     conn.close()
@@ -205,34 +213,48 @@ def get_latest_biometrics(user_id: int, date: str = None):
 
 def get_phase_biometric_avg(user_id: int, phase: str):
     conn = get_db()
-    # Get all biometrics and join with cycle phase — simplified: return avg across recent 90 days
     rows = conn.execute("""
-        SELECT hrv, sleep_score FROM biometric_snapshots
+        SELECT hrv, sleep_score, stress_score, readiness_score, steps
+        FROM biometric_snapshots
         WHERE user_id = ? ORDER BY date DESC LIMIT 90
     """, (user_id,)).fetchall()
     conn.close()
     if not rows:
-        return {"hrv_avg": None, "sleep_avg": None}
-    hrv_vals = [r["hrv"] for r in rows if r["hrv"]]
-    sleep_vals = [r["sleep_score"] for r in rows if r["sleep_score"]]
+        return {}
+
+    def avg(vals): return round(sum(vals) / len(vals), 1) if vals else None
+
     return {
-        "hrv_avg": round(sum(hrv_vals) / len(hrv_vals), 1) if hrv_vals else None,
-        "sleep_avg": round(sum(sleep_vals) / len(sleep_vals), 1) if sleep_vals else None,
+        "hrv_avg":       avg([r["hrv"] for r in rows if r["hrv"]]),
+        "sleep_avg":     avg([r["sleep_score"] for r in rows if r["sleep_score"]]),
+        "stress_avg":    avg([r["stress_score"] for r in rows if r["stress_score"]]),
+        "readiness_avg": avg([r["readiness_score"] for r in rows if r["readiness_score"]]),
+        "steps_avg":     avg([r["steps"] for r in rows if r["steps"]]),
     }
 
 
 def get_feedback_for_phase(user_id: int, phase: str, cycle_day: int):
     conn = get_db()
-    rows = conn.execute("""
-        SELECT f.workout_type, f.liked, f.created_at
-        FROM feedback f
-        JOIN workout_suggestions ws ON f.suggestion_id = ws.id
-        WHERE f.user_id = ?
-        ORDER BY f.created_at DESC
-        LIMIT 50
-    """, (user_id,)).fetchall()
+    # Phase-specific feedback first, then fall back to all recent
+    phase_rows = conn.execute("""
+        SELECT workout_type, liked, phase, cycle_day, note, created_at
+        FROM feedback
+        WHERE user_id = ? AND phase = ?
+        ORDER BY created_at DESC
+        LIMIT 30
+    """, (user_id, phase)).fetchall()
+
+    # Also grab a few from other phases so LLM can spot cross-phase patterns
+    other_rows = conn.execute("""
+        SELECT workout_type, liked, phase, cycle_day, note, created_at
+        FROM feedback
+        WHERE user_id = ? AND (phase != ? OR phase IS NULL)
+        ORDER BY created_at DESC
+        LIMIT 10
+    """, (user_id, phase)).fetchall()
+
     conn.close()
-    return [dict(r) for r in rows]
+    return [dict(r) for r in phase_rows] + [dict(r) for r in other_rows]
 
 
 def save_suggestion(user_id: int, date: str, context_snapshot: dict, suggestions: list):
@@ -248,12 +270,13 @@ def save_suggestion(user_id: int, date: str, context_snapshot: dict, suggestions
     return suggestion_id
 
 
-def save_feedback(suggestion_id: int, user_id: int, workout_type: str, liked: bool):
+def save_feedback(suggestion_id: int, user_id: int, workout_type: str, liked: bool,
+                  phase: str = None, cycle_day: int = None, note: str = None):
     conn = get_db()
     conn.execute("""
-        INSERT INTO feedback (suggestion_id, user_id, workout_type, liked)
-        VALUES (?, ?, ?, ?)
-    """, (suggestion_id, user_id, workout_type, 1 if liked else 0))
+        INSERT INTO feedback (suggestion_id, user_id, workout_type, liked, phase, cycle_day, note)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+    """, (suggestion_id, user_id, workout_type, 1 if liked else 0, phase, cycle_day, note))
     conn.commit()
     conn.close()
 

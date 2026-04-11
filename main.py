@@ -58,6 +58,10 @@ class BiometricsRequest(BaseModel):
     resting_hr: Optional[float] = None
     sleep_score: Optional[float] = None
     sleep_hours: Optional[float] = None
+    bbt: Optional[float] = None             # basal body temperature (°F)
+    stress_score: Optional[float] = None   # 0–100, lower is better
+    readiness_score: Optional[float] = None # 0–100 composite (Oura/Whoop style)
+    steps: Optional[int] = None            # steps from previous day
     date: Optional[str] = None
 
 class FeedbackRequest(BaseModel):
@@ -181,9 +185,11 @@ def log_biometrics(user_id: int, req: BiometricsRequest):
     bio_date = req.date or date.today().isoformat()
     conn = db.get_db()
     conn.execute("""
-        INSERT OR REPLACE INTO biometric_snapshots (user_id, date, hrv, resting_hr, sleep_score, sleep_hours)
-        VALUES (?, ?, ?, ?, ?, ?)
-    """, (user_id, bio_date, req.hrv, req.resting_hr, req.sleep_score, req.sleep_hours))
+        INSERT OR REPLACE INTO biometric_snapshots
+        (user_id, date, hrv, resting_hr, sleep_score, sleep_hours, bbt, stress_score, readiness_score, steps)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (user_id, bio_date, req.hrv, req.resting_hr, req.sleep_score, req.sleep_hours,
+          req.bbt, req.stress_score, req.readiness_score, req.steps))
     conn.commit()
     conn.close()
     return {"logged": True, "date": bio_date}
@@ -222,12 +228,17 @@ def feedback(suggestion_id: int, req: FeedbackRequest):
     suggestion_row = dict(row)
     user_id = suggestion_row["user_id"]
 
-    db.save_feedback(suggestion_id, user_id, req.workout_type, req.liked)
-
-    # Update NL profile
     user = db.get_user(user_id)
     cycle_logs = get_cycle_logs_for_user(user_id)
     cycle_info = get_cycle_info(cycle_logs, user["cycle_length_avg"])
+
+    db.save_feedback(
+        suggestion_id, user_id, req.workout_type, req.liked,
+        phase=cycle_info.get("phase"),
+        cycle_day=cycle_info.get("cycle_day"),
+        note=req.note,
+    )
+
     update_profile(user_id, "feedback", {
         "workout_type": req.workout_type,
         "liked": req.liked,
