@@ -256,6 +256,13 @@ def feedback(suggestion_id: int, req: FeedbackRequest):
 
 # ── History ────────────────────────────────────────────────────────────────────
 
+@app.get("/users/{user_id}/profile-history")
+def profile_history(user_id: int, limit: int = 30):
+    if not db.get_user(user_id):
+        raise HTTPException(404, "User not found")
+    return db.get_profile_history(user_id, limit)
+
+
 @app.get("/users/{user_id}/history")
 def history(user_id: int, limit: int = 30):
     if not db.get_user(user_id):

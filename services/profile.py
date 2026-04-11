@@ -102,5 +102,5 @@ Rules:
     )
 
     updated_summary = response.content[0].text.strip()
-    update_profile_summary(user_id, updated_summary)
+    update_profile_summary(user_id, updated_summary, trigger=trigger)
     return updated_summary

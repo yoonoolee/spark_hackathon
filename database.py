@@ -71,6 +71,16 @@ def init_db():
             FOREIGN KEY (user_id) REFERENCES users(id)
         );
 
+        CREATE TABLE IF NOT EXISTS profile_history (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            date TEXT NOT NULL,
+            profile_summary TEXT NOT NULL,
+            trigger TEXT,
+            created_at TEXT DEFAULT (datetime('now')),
+            FOREIGN KEY (user_id) REFERENCES users(id)
+        );
+
         CREATE TABLE IF NOT EXISTS feedback (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             suggestion_id INTEGER NOT NULL,
@@ -281,11 +291,32 @@ def save_feedback(suggestion_id: int, user_id: int, workout_type: str, liked: bo
     conn.close()
 
 
-def update_profile_summary(user_id: int, profile_summary: str):
+def update_profile_summary(user_id: int, profile_summary: str, trigger: str = None):
+    from datetime import date
     conn = get_db()
+    # Update current profile
     conn.execute("UPDATE users SET profile_summary = ? WHERE id = ?", (profile_summary, user_id))
+    # Save snapshot to history (one per day per trigger — don't duplicate same day+trigger)
+    today = date.today().isoformat()
+    conn.execute("""
+        INSERT INTO profile_history (user_id, date, profile_summary, trigger)
+        VALUES (?, ?, ?, ?)
+    """, (user_id, today, profile_summary, trigger))
     conn.commit()
     conn.close()
+
+
+def get_profile_history(user_id: int, limit: int = 30):
+    conn = get_db()
+    rows = conn.execute("""
+        SELECT date, profile_summary, trigger, created_at
+        FROM profile_history
+        WHERE user_id = ?
+        ORDER BY created_at DESC
+        LIMIT ?
+    """, (user_id, limit)).fetchall()
+    conn.close()
+    return [dict(r) for r in rows]
 
 
 def get_checkin_streak(user_id: int) -> int:
