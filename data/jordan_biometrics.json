@@ -1,0 +1,2557 @@
+[
+  {
+    "date": "2024-04-11",
+    "hrv": 55.1,
+    "resting_hr": 64.4,
+    "sleep_score": 75.7,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-04-12",
+    "hrv": 53.7,
+    "resting_hr": 59.4,
+    "sleep_score": 73.4,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-04-13",
+    "hrv": 52.4,
+    "resting_hr": 70.6,
+    "sleep_score": 73.5,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-04-14",
+    "hrv": 55.4,
+    "resting_hr": 68.9,
+    "sleep_score": 73.7,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-04-15",
+    "hrv": 54.2,
+    "resting_hr": 71.4,
+    "sleep_score": 74.4,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-04-16",
+    "hrv": 62.7,
+    "resting_hr": 70.9,
+    "sleep_score": 81.8,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-04-17",
+    "hrv": 60.0,
+    "resting_hr": 70.8,
+    "sleep_score": 80.6,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-04-18",
+    "hrv": 62.4,
+    "resting_hr": 70.4,
+    "sleep_score": 77.7,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-04-19",
+    "hrv": 61.5,
+    "resting_hr": 67.9,
+    "sleep_score": 87.1,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-04-20",
+    "hrv": 61.7,
+    "resting_hr": 66.2,
+    "sleep_score": 85.1,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-04-21",
+    "hrv": 63.0,
+    "resting_hr": 59.5,
+    "sleep_score": 81.1,
+    "sleep_hours": 6.5
+  },
+  {
+    "date": "2024-04-22",
+    "hrv": 63.9,
+    "resting_hr": 58.9,
+    "sleep_score": 84.2,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-04-23",
+    "hrv": 65.9,
+    "resting_hr": 61.1,
+    "sleep_score": 86.1,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-04-24",
+    "hrv": 66.5,
+    "resting_hr": 63.8,
+    "sleep_score": 78.6,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-04-25",
+    "hrv": 67.6,
+    "resting_hr": 67.1,
+    "sleep_score": 88.9,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2024-04-26",
+    "hrv": 57.6,
+    "resting_hr": 71.5,
+    "sleep_score": 84.8,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2024-04-27",
+    "hrv": 58.5,
+    "resting_hr": 61.6,
+    "sleep_score": 74.6,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-04-28",
+    "hrv": 60.2,
+    "resting_hr": 62.2,
+    "sleep_score": 80.5,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-04-29",
+    "hrv": 61.7,
+    "resting_hr": 60.2,
+    "sleep_score": 79.2,
+    "sleep_hours": 8.1
+  },
+  {
+    "date": "2024-04-30",
+    "hrv": 56.6,
+    "resting_hr": 66.7,
+    "sleep_score": 76.5,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2024-05-01",
+    "hrv": 55.9,
+    "resting_hr": 61.4,
+    "sleep_score": 80.7,
+    "sleep_hours": 8.3
+  },
+  {
+    "date": "2024-05-02",
+    "hrv": 58.3,
+    "resting_hr": 69.5,
+    "sleep_score": 76.4,
+    "sleep_hours": 8.3
+  },
+  {
+    "date": "2024-05-03",
+    "hrv": 58.1,
+    "resting_hr": 71.4,
+    "sleep_score": 84.4,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-05-04",
+    "hrv": 60.9,
+    "resting_hr": 65.5,
+    "sleep_score": 78.1,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-05-05",
+    "hrv": 59.7,
+    "resting_hr": 60.5,
+    "sleep_score": 73.5,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2024-05-06",
+    "hrv": 57.6,
+    "resting_hr": 63.5,
+    "sleep_score": 77.9,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2024-05-07",
+    "hrv": 59.6,
+    "resting_hr": 59.5,
+    "sleep_score": 73.9,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2024-05-08",
+    "hrv": 51.2,
+    "resting_hr": 65.5,
+    "sleep_score": 76.9,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-05-09",
+    "hrv": 55.7,
+    "resting_hr": 60.0,
+    "sleep_score": 69.1,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-05-10",
+    "hrv": 49.7,
+    "resting_hr": 60.0,
+    "sleep_score": 79.9,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-05-11",
+    "hrv": 54.8,
+    "resting_hr": 64.5,
+    "sleep_score": 80.2,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-05-12",
+    "hrv": 55.6,
+    "resting_hr": 61.3,
+    "sleep_score": 73.3,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-05-13",
+    "hrv": 58.6,
+    "resting_hr": 60.1,
+    "sleep_score": 83.9,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2024-05-14",
+    "hrv": 58.0,
+    "resting_hr": 64.1,
+    "sleep_score": 78.7,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-05-15",
+    "hrv": 63.0,
+    "resting_hr": 62.3,
+    "sleep_score": 81.6,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2024-05-16",
+    "hrv": 58.1,
+    "resting_hr": 59.1,
+    "sleep_score": 86.6,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-05-17",
+    "hrv": 60.4,
+    "resting_hr": 64.6,
+    "sleep_score": 82.5,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-05-18",
+    "hrv": 57.1,
+    "resting_hr": 63.1,
+    "sleep_score": 82.0,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-05-19",
+    "hrv": 57.3,
+    "resting_hr": 70.2,
+    "sleep_score": 82.8,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-05-20",
+    "hrv": 63.1,
+    "resting_hr": 65.3,
+    "sleep_score": 80.8,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-05-21",
+    "hrv": 68.8,
+    "resting_hr": 65.3,
+    "sleep_score": 81.9,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2024-05-22",
+    "hrv": 64.0,
+    "resting_hr": 70.6,
+    "sleep_score": 82.5,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-05-23",
+    "hrv": 56.8,
+    "resting_hr": 64.7,
+    "sleep_score": 83.4,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-05-24",
+    "hrv": 58.1,
+    "resting_hr": 60.2,
+    "sleep_score": 76.4,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-05-25",
+    "hrv": 57.9,
+    "resting_hr": 60.3,
+    "sleep_score": 78.7,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-05-26",
+    "hrv": 55.0,
+    "resting_hr": 65.2,
+    "sleep_score": 80.1,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-05-27",
+    "hrv": 56.1,
+    "resting_hr": 66.4,
+    "sleep_score": 75.2,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2024-05-28",
+    "hrv": 58.9,
+    "resting_hr": 61.1,
+    "sleep_score": 78.7,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-05-29",
+    "hrv": 55.3,
+    "resting_hr": 66.4,
+    "sleep_score": 81.2,
+    "sleep_hours": 8.3
+  },
+  {
+    "date": "2024-05-30",
+    "hrv": 60.6,
+    "resting_hr": 70.6,
+    "sleep_score": 80.3,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-05-31",
+    "hrv": 61.2,
+    "resting_hr": 71.1,
+    "sleep_score": 79.5,
+    "sleep_hours": 6.5
+  },
+  {
+    "date": "2024-06-01",
+    "hrv": 55.8,
+    "resting_hr": 63.3,
+    "sleep_score": 82.6,
+    "sleep_hours": 8.1
+  },
+  {
+    "date": "2024-06-02",
+    "hrv": 60.1,
+    "resting_hr": 66.4,
+    "sleep_score": 83.9,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-06-03",
+    "hrv": 58.6,
+    "resting_hr": 67.2,
+    "sleep_score": 74.4,
+    "sleep_hours": 6.5
+  },
+  {
+    "date": "2024-06-04",
+    "hrv": 51.4,
+    "resting_hr": 65.5,
+    "sleep_score": 76.0,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2024-06-05",
+    "hrv": 49.4,
+    "resting_hr": 71.8,
+    "sleep_score": 75.7,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-06-06",
+    "hrv": 51.6,
+    "resting_hr": 61.0,
+    "sleep_score": 77.4,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-06-07",
+    "hrv": 54.6,
+    "resting_hr": 59.2,
+    "sleep_score": 74.7,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-06-08",
+    "hrv": 52.9,
+    "resting_hr": 66.4,
+    "sleep_score": 75.3,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2024-06-09",
+    "hrv": 59.5,
+    "resting_hr": 69.3,
+    "sleep_score": 78.4,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-06-10",
+    "hrv": 58.9,
+    "resting_hr": 59.2,
+    "sleep_score": 83.9,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-06-11",
+    "hrv": 60.1,
+    "resting_hr": 59.3,
+    "sleep_score": 84.8,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2024-06-12",
+    "hrv": 59.6,
+    "resting_hr": 60.5,
+    "sleep_score": 80.8,
+    "sleep_hours": 6.5
+  },
+  {
+    "date": "2024-06-13",
+    "hrv": 63.0,
+    "resting_hr": 67.7,
+    "sleep_score": 85.8,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-06-14",
+    "hrv": 62.1,
+    "resting_hr": 64.5,
+    "sleep_score": 87.5,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-06-15",
+    "hrv": 59.1,
+    "resting_hr": 67.8,
+    "sleep_score": 85.5,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-06-16",
+    "hrv": 66.6,
+    "resting_hr": 63.6,
+    "sleep_score": 81.2,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2024-06-17",
+    "hrv": 63.8,
+    "resting_hr": 71.3,
+    "sleep_score": 88.7,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2024-06-18",
+    "hrv": 66.9,
+    "resting_hr": 60.8,
+    "sleep_score": 88.5,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-06-19",
+    "hrv": 61.4,
+    "resting_hr": 66.6,
+    "sleep_score": 81.1,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-06-20",
+    "hrv": 57.9,
+    "resting_hr": 70.2,
+    "sleep_score": 84.8,
+    "sleep_hours": 8.3
+  },
+  {
+    "date": "2024-06-21",
+    "hrv": 54.4,
+    "resting_hr": 65.6,
+    "sleep_score": 82.6,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-06-22",
+    "hrv": 56.5,
+    "resting_hr": 63.3,
+    "sleep_score": 73.1,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-06-23",
+    "hrv": 55.9,
+    "resting_hr": 63.1,
+    "sleep_score": 78.7,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-06-24",
+    "hrv": 60.8,
+    "resting_hr": 59.8,
+    "sleep_score": 76.4,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-06-25",
+    "hrv": 58.4,
+    "resting_hr": 69.2,
+    "sleep_score": 83.3,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-06-26",
+    "hrv": 60.3,
+    "resting_hr": 65.9,
+    "sleep_score": 76.6,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-06-27",
+    "hrv": 60.7,
+    "resting_hr": 61.6,
+    "sleep_score": 74.2,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-06-28",
+    "hrv": 56.8,
+    "resting_hr": 66.1,
+    "sleep_score": 81.2,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-06-29",
+    "hrv": 60.2,
+    "resting_hr": 66.6,
+    "sleep_score": 78.4,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-06-30",
+    "hrv": 53.1,
+    "resting_hr": 59.0,
+    "sleep_score": 75.9,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-07-01",
+    "hrv": 53.7,
+    "resting_hr": 70.4,
+    "sleep_score": 76.3,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-07-02",
+    "hrv": 53.8,
+    "resting_hr": 67.8,
+    "sleep_score": 76.9,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2024-07-03",
+    "hrv": 55.5,
+    "resting_hr": 68.8,
+    "sleep_score": 74.7,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2024-07-04",
+    "hrv": 48.7,
+    "resting_hr": 61.2,
+    "sleep_score": 80.2,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-07-05",
+    "hrv": 61.3,
+    "resting_hr": 64.7,
+    "sleep_score": 86.3,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2024-07-06",
+    "hrv": 57.1,
+    "resting_hr": 66.3,
+    "sleep_score": 87.4,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-07-07",
+    "hrv": 62.4,
+    "resting_hr": 61.6,
+    "sleep_score": 81.3,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2024-07-08",
+    "hrv": 60.3,
+    "resting_hr": 68.6,
+    "sleep_score": 84.3,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-07-09",
+    "hrv": 57.5,
+    "resting_hr": 61.5,
+    "sleep_score": 86.6,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-07-10",
+    "hrv": 60.1,
+    "resting_hr": 67.7,
+    "sleep_score": 85.6,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-07-11",
+    "hrv": 57.1,
+    "resting_hr": 64.3,
+    "sleep_score": 77.3,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-07-12",
+    "hrv": 62.5,
+    "resting_hr": 68.0,
+    "sleep_score": 79.2,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2024-07-13",
+    "hrv": 62.7,
+    "resting_hr": 65.0,
+    "sleep_score": 83.0,
+    "sleep_hours": 8.1
+  },
+  {
+    "date": "2024-07-14",
+    "hrv": 63.1,
+    "resting_hr": 60.5,
+    "sleep_score": 82.7,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-07-15",
+    "hrv": 55.0,
+    "resting_hr": 68.8,
+    "sleep_score": 82.2,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2024-07-16",
+    "hrv": 58.2,
+    "resting_hr": 67.5,
+    "sleep_score": 84.8,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-07-17",
+    "hrv": 60.0,
+    "resting_hr": 64.7,
+    "sleep_score": 79.6,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-07-18",
+    "hrv": 55.9,
+    "resting_hr": 69.1,
+    "sleep_score": 78.2,
+    "sleep_hours": 6.5
+  },
+  {
+    "date": "2024-07-19",
+    "hrv": 59.5,
+    "resting_hr": 61.5,
+    "sleep_score": 74.9,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-07-20",
+    "hrv": 59.6,
+    "resting_hr": 61.3,
+    "sleep_score": 82.5,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-07-21",
+    "hrv": 59.9,
+    "resting_hr": 68.1,
+    "sleep_score": 73.3,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-07-22",
+    "hrv": 58.3,
+    "resting_hr": 65.6,
+    "sleep_score": 78.9,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-07-23",
+    "hrv": 54.6,
+    "resting_hr": 61.7,
+    "sleep_score": 74.9,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2024-07-24",
+    "hrv": 53.0,
+    "resting_hr": 62.5,
+    "sleep_score": 73.4,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-07-25",
+    "hrv": 52.9,
+    "resting_hr": 59.5,
+    "sleep_score": 72.9,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-07-26",
+    "hrv": 49.6,
+    "resting_hr": 66.0,
+    "sleep_score": 74.8,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-07-27",
+    "hrv": 48.4,
+    "resting_hr": 58.2,
+    "sleep_score": 71.6,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2024-07-28",
+    "hrv": 51.7,
+    "resting_hr": 68.4,
+    "sleep_score": 76.7,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2024-07-29",
+    "hrv": 62.6,
+    "resting_hr": 59.0,
+    "sleep_score": 79.2,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2024-07-30",
+    "hrv": 60.3,
+    "resting_hr": 61.5,
+    "sleep_score": 78.3,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-07-31",
+    "hrv": 61.4,
+    "resting_hr": 59.5,
+    "sleep_score": 84.4,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-08-01",
+    "hrv": 63.5,
+    "resting_hr": 72.0,
+    "sleep_score": 86.8,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-08-02",
+    "hrv": 62.6,
+    "resting_hr": 65.6,
+    "sleep_score": 79.9,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2024-08-03",
+    "hrv": 56.0,
+    "resting_hr": 58.2,
+    "sleep_score": 76.4,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2024-08-04",
+    "hrv": 62.8,
+    "resting_hr": 67.7,
+    "sleep_score": 76.3,
+    "sleep_hours": 8.1
+  },
+  {
+    "date": "2024-08-05",
+    "hrv": 62.2,
+    "resting_hr": 61.5,
+    "sleep_score": 81.2,
+    "sleep_hours": 8.3
+  },
+  {
+    "date": "2024-08-06",
+    "hrv": 66.8,
+    "resting_hr": 69.6,
+    "sleep_score": 87.5,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-08-07",
+    "hrv": 61.3,
+    "resting_hr": 68.9,
+    "sleep_score": 87.7,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-08-08",
+    "hrv": 57.3,
+    "resting_hr": 61.2,
+    "sleep_score": 83.4,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-08-09",
+    "hrv": 56.6,
+    "resting_hr": 67.8,
+    "sleep_score": 79.8,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2024-08-10",
+    "hrv": 55.8,
+    "resting_hr": 59.9,
+    "sleep_score": 76.5,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-08-11",
+    "hrv": 58.0,
+    "resting_hr": 59.9,
+    "sleep_score": 82.3,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-08-12",
+    "hrv": 55.9,
+    "resting_hr": 67.6,
+    "sleep_score": 76.2,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-08-13",
+    "hrv": 55.5,
+    "resting_hr": 68.8,
+    "sleep_score": 77.1,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-08-14",
+    "hrv": 54.4,
+    "resting_hr": 63.2,
+    "sleep_score": 82.8,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-08-15",
+    "hrv": 61.6,
+    "resting_hr": 69.5,
+    "sleep_score": 84.1,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-08-16",
+    "hrv": 56.7,
+    "resting_hr": 65.6,
+    "sleep_score": 81.9,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-08-17",
+    "hrv": 58.7,
+    "resting_hr": 60.4,
+    "sleep_score": 81.0,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2024-08-18",
+    "hrv": 54.5,
+    "resting_hr": 70.8,
+    "sleep_score": 80.9,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-08-19",
+    "hrv": 55.8,
+    "resting_hr": 59.4,
+    "sleep_score": 77.6,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-08-20",
+    "hrv": 52.5,
+    "resting_hr": 70.9,
+    "sleep_score": 77.5,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2024-08-21",
+    "hrv": 50.8,
+    "resting_hr": 71.7,
+    "sleep_score": 72.6,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-08-22",
+    "hrv": 49.8,
+    "resting_hr": 59.9,
+    "sleep_score": 73.1,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-08-23",
+    "hrv": 51.4,
+    "resting_hr": 64.3,
+    "sleep_score": 72.7,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-08-24",
+    "hrv": 51.4,
+    "resting_hr": 67.2,
+    "sleep_score": 79.9,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-08-25",
+    "hrv": 57.5,
+    "resting_hr": 58.4,
+    "sleep_score": 86.1,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-08-26",
+    "hrv": 57.2,
+    "resting_hr": 58.4,
+    "sleep_score": 78.3,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-08-27",
+    "hrv": 60.8,
+    "resting_hr": 59.1,
+    "sleep_score": 78.8,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2024-08-28",
+    "hrv": 57.5,
+    "resting_hr": 60.3,
+    "sleep_score": 80.6,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-08-29",
+    "hrv": 62.1,
+    "resting_hr": 71.8,
+    "sleep_score": 76.8,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2024-08-30",
+    "hrv": 62.9,
+    "resting_hr": 68.9,
+    "sleep_score": 86.7,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-08-31",
+    "hrv": 60.2,
+    "resting_hr": 58.6,
+    "sleep_score": 81.4,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-09-01",
+    "hrv": 68.9,
+    "resting_hr": 68.7,
+    "sleep_score": 78.5,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-09-02",
+    "hrv": 64.2,
+    "resting_hr": 64.5,
+    "sleep_score": 81.7,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-09-03",
+    "hrv": 64.7,
+    "resting_hr": 65.0,
+    "sleep_score": 85.8,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-09-04",
+    "hrv": 57.6,
+    "resting_hr": 68.0,
+    "sleep_score": 75.1,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-09-05",
+    "hrv": 59.7,
+    "resting_hr": 64.3,
+    "sleep_score": 74.5,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-09-06",
+    "hrv": 61.3,
+    "resting_hr": 60.1,
+    "sleep_score": 79.8,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-09-07",
+    "hrv": 57.4,
+    "resting_hr": 64.2,
+    "sleep_score": 76.7,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-09-08",
+    "hrv": 54.1,
+    "resting_hr": 69.3,
+    "sleep_score": 79.0,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-09-09",
+    "hrv": 57.3,
+    "resting_hr": 61.4,
+    "sleep_score": 74.0,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-09-10",
+    "hrv": 59.2,
+    "resting_hr": 67.3,
+    "sleep_score": 73.4,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-09-11",
+    "hrv": 54.4,
+    "resting_hr": 67.4,
+    "sleep_score": 78.0,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-09-12",
+    "hrv": 61.5,
+    "resting_hr": 63.2,
+    "sleep_score": 74.1,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2024-09-13",
+    "hrv": 51.8,
+    "resting_hr": 62.6,
+    "sleep_score": 70.5,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-09-14",
+    "hrv": 52.6,
+    "resting_hr": 59.2,
+    "sleep_score": 80.8,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-09-15",
+    "hrv": 55.4,
+    "resting_hr": 68.2,
+    "sleep_score": 76.4,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-09-16",
+    "hrv": 48.0,
+    "resting_hr": 59.7,
+    "sleep_score": 69.3,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-09-17",
+    "hrv": 48.4,
+    "resting_hr": 61.0,
+    "sleep_score": 73.2,
+    "sleep_hours": 8.1
+  },
+  {
+    "date": "2024-09-18",
+    "hrv": 62.1,
+    "resting_hr": 63.5,
+    "sleep_score": 77.4,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2024-09-19",
+    "hrv": 63.4,
+    "resting_hr": 58.5,
+    "sleep_score": 81.7,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-09-20",
+    "hrv": 62.3,
+    "resting_hr": 69.7,
+    "sleep_score": 81.0,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-09-21",
+    "hrv": 62.4,
+    "resting_hr": 71.6,
+    "sleep_score": 86.7,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2024-09-22",
+    "hrv": 60.6,
+    "resting_hr": 70.1,
+    "sleep_score": 80.7,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-09-23",
+    "hrv": 60.0,
+    "resting_hr": 71.3,
+    "sleep_score": 78.9,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-09-24",
+    "hrv": 62.2,
+    "resting_hr": 58.3,
+    "sleep_score": 87.0,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-09-25",
+    "hrv": 67.2,
+    "resting_hr": 69.5,
+    "sleep_score": 79.7,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-09-26",
+    "hrv": 66.8,
+    "resting_hr": 65.3,
+    "sleep_score": 83.5,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2024-09-27",
+    "hrv": 61.8,
+    "resting_hr": 58.3,
+    "sleep_score": 87.2,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-09-28",
+    "hrv": 56.2,
+    "resting_hr": 59.6,
+    "sleep_score": 76.8,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-09-29",
+    "hrv": 55.7,
+    "resting_hr": 60.0,
+    "sleep_score": 77.2,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2024-09-30",
+    "hrv": 58.9,
+    "resting_hr": 59.8,
+    "sleep_score": 77.1,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-10-01",
+    "hrv": 57.4,
+    "resting_hr": 66.3,
+    "sleep_score": 75.1,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-10-02",
+    "hrv": 56.5,
+    "resting_hr": 67.4,
+    "sleep_score": 82.8,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2024-10-03",
+    "hrv": 57.6,
+    "resting_hr": 64.5,
+    "sleep_score": 81.2,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2024-10-04",
+    "hrv": 57.1,
+    "resting_hr": 69.0,
+    "sleep_score": 81.4,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-10-05",
+    "hrv": 54.5,
+    "resting_hr": 69.8,
+    "sleep_score": 74.4,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-10-06",
+    "hrv": 60.5,
+    "resting_hr": 67.1,
+    "sleep_score": 82.6,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2024-10-07",
+    "hrv": 52.4,
+    "resting_hr": 62.8,
+    "sleep_score": 80.7,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-10-08",
+    "hrv": 52.5,
+    "resting_hr": 60.4,
+    "sleep_score": 73.1,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2024-10-09",
+    "hrv": 54.6,
+    "resting_hr": 59.0,
+    "sleep_score": 71.1,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2024-10-10",
+    "hrv": 49.7,
+    "resting_hr": 68.6,
+    "sleep_score": 70.7,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-10-11",
+    "hrv": 51.6,
+    "resting_hr": 64.3,
+    "sleep_score": 72.5,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-10-12",
+    "hrv": 61.7,
+    "resting_hr": 66.2,
+    "sleep_score": 87.0,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-10-13",
+    "hrv": 56.0,
+    "resting_hr": 59.5,
+    "sleep_score": 82.7,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-10-14",
+    "hrv": 61.0,
+    "resting_hr": 64.1,
+    "sleep_score": 84.5,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-10-15",
+    "hrv": 62.7,
+    "resting_hr": 62.0,
+    "sleep_score": 80.3,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-10-16",
+    "hrv": 56.6,
+    "resting_hr": 64.8,
+    "sleep_score": 76.2,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2024-10-17",
+    "hrv": 62.9,
+    "resting_hr": 71.0,
+    "sleep_score": 86.7,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2024-10-18",
+    "hrv": 57.8,
+    "resting_hr": 65.0,
+    "sleep_score": 81.1,
+    "sleep_hours": 6.5
+  },
+  {
+    "date": "2024-10-19",
+    "hrv": 61.3,
+    "resting_hr": 63.2,
+    "sleep_score": 78.5,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-10-20",
+    "hrv": 64.7,
+    "resting_hr": 59.2,
+    "sleep_score": 78.9,
+    "sleep_hours": 8.3
+  },
+  {
+    "date": "2024-10-21",
+    "hrv": 65.3,
+    "resting_hr": 70.7,
+    "sleep_score": 78.1,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-10-22",
+    "hrv": 54.3,
+    "resting_hr": 68.2,
+    "sleep_score": 84.1,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-10-23",
+    "hrv": 59.3,
+    "resting_hr": 58.4,
+    "sleep_score": 76.5,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-10-24",
+    "hrv": 58.9,
+    "resting_hr": 68.4,
+    "sleep_score": 76.3,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2024-10-25",
+    "hrv": 60.3,
+    "resting_hr": 65.4,
+    "sleep_score": 75.8,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-10-26",
+    "hrv": 60.0,
+    "resting_hr": 67.2,
+    "sleep_score": 78.0,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-10-27",
+    "hrv": 54.4,
+    "resting_hr": 58.7,
+    "sleep_score": 76.2,
+    "sleep_hours": 8.1
+  },
+  {
+    "date": "2024-10-28",
+    "hrv": 59.5,
+    "resting_hr": 65.4,
+    "sleep_score": 77.7,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2024-10-29",
+    "hrv": 61.7,
+    "resting_hr": 70.8,
+    "sleep_score": 81.2,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2024-10-30",
+    "hrv": 59.2,
+    "resting_hr": 68.5,
+    "sleep_score": 77.7,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-10-31",
+    "hrv": 56.5,
+    "resting_hr": 59.0,
+    "sleep_score": 73.1,
+    "sleep_hours": 6.5
+  },
+  {
+    "date": "2024-11-01",
+    "hrv": 56.0,
+    "resting_hr": 58.8,
+    "sleep_score": 73.4,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-11-02",
+    "hrv": 60.9,
+    "resting_hr": 70.6,
+    "sleep_score": 74.6,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-11-03",
+    "hrv": 50.4,
+    "resting_hr": 64.3,
+    "sleep_score": 76.9,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-11-04",
+    "hrv": 50.1,
+    "resting_hr": 58.9,
+    "sleep_score": 78.4,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2024-11-05",
+    "hrv": 48.6,
+    "resting_hr": 63.5,
+    "sleep_score": 80.8,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-11-06",
+    "hrv": 52.9,
+    "resting_hr": 61.6,
+    "sleep_score": 70.3,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-11-07",
+    "hrv": 49.2,
+    "resting_hr": 67.3,
+    "sleep_score": 76.7,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2024-11-08",
+    "hrv": 59.8,
+    "resting_hr": 69.4,
+    "sleep_score": 80.8,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-11-09",
+    "hrv": 57.0,
+    "resting_hr": 62.7,
+    "sleep_score": 82.4,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-11-10",
+    "hrv": 56.6,
+    "resting_hr": 67.1,
+    "sleep_score": 81.5,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2024-11-11",
+    "hrv": 61.6,
+    "resting_hr": 63.0,
+    "sleep_score": 86.8,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-11-12",
+    "hrv": 59.9,
+    "resting_hr": 62.3,
+    "sleep_score": 76.8,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-11-13",
+    "hrv": 59.2,
+    "resting_hr": 65.3,
+    "sleep_score": 78.5,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-11-14",
+    "hrv": 63.4,
+    "resting_hr": 67.2,
+    "sleep_score": 76.4,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-11-15",
+    "hrv": 61.1,
+    "resting_hr": 69.5,
+    "sleep_score": 85.6,
+    "sleep_hours": 8.3
+  },
+  {
+    "date": "2024-11-16",
+    "hrv": 61.9,
+    "resting_hr": 58.9,
+    "sleep_score": 85.1,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-11-17",
+    "hrv": 63.6,
+    "resting_hr": 58.6,
+    "sleep_score": 89.6,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-11-18",
+    "hrv": 55.3,
+    "resting_hr": 61.4,
+    "sleep_score": 77.4,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-11-19",
+    "hrv": 60.2,
+    "resting_hr": 58.1,
+    "sleep_score": 73.2,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-11-20",
+    "hrv": 59.5,
+    "resting_hr": 65.3,
+    "sleep_score": 75.5,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-11-21",
+    "hrv": 58.9,
+    "resting_hr": 62.2,
+    "sleep_score": 74.1,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2024-11-22",
+    "hrv": 59.0,
+    "resting_hr": 65.1,
+    "sleep_score": 83.4,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-11-23",
+    "hrv": 60.4,
+    "resting_hr": 64.6,
+    "sleep_score": 81.2,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2024-11-24",
+    "hrv": 55.7,
+    "resting_hr": 70.5,
+    "sleep_score": 76.0,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2024-11-25",
+    "hrv": 60.3,
+    "resting_hr": 70.5,
+    "sleep_score": 78.8,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2024-11-26",
+    "hrv": 55.8,
+    "resting_hr": 61.3,
+    "sleep_score": 74.3,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2024-11-27",
+    "hrv": 58.7,
+    "resting_hr": 61.0,
+    "sleep_score": 73.7,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-11-28",
+    "hrv": 59.8,
+    "resting_hr": 60.8,
+    "sleep_score": 80.6,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-11-29",
+    "hrv": 57.7,
+    "resting_hr": 70.4,
+    "sleep_score": 75.1,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2024-11-30",
+    "hrv": 54.9,
+    "resting_hr": 64.5,
+    "sleep_score": 71.6,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-12-01",
+    "hrv": 55.1,
+    "resting_hr": 66.0,
+    "sleep_score": 76.1,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-12-02",
+    "hrv": 51.4,
+    "resting_hr": 67.8,
+    "sleep_score": 73.7,
+    "sleep_hours": 8.1
+  },
+  {
+    "date": "2024-12-03",
+    "hrv": 55.6,
+    "resting_hr": 67.1,
+    "sleep_score": 70.6,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2024-12-04",
+    "hrv": 55.8,
+    "resting_hr": 67.8,
+    "sleep_score": 74.6,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-12-05",
+    "hrv": 59.1,
+    "resting_hr": 62.2,
+    "sleep_score": 84.3,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-12-06",
+    "hrv": 60.1,
+    "resting_hr": 58.7,
+    "sleep_score": 86.9,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2024-12-07",
+    "hrv": 60.5,
+    "resting_hr": 62.7,
+    "sleep_score": 85.3,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-12-08",
+    "hrv": 63.2,
+    "resting_hr": 58.8,
+    "sleep_score": 82.0,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2024-12-09",
+    "hrv": 59.6,
+    "resting_hr": 67.7,
+    "sleep_score": 80.4,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-12-10",
+    "hrv": 56.7,
+    "resting_hr": 71.4,
+    "sleep_score": 80.7,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-12-11",
+    "hrv": 60.0,
+    "resting_hr": 66.8,
+    "sleep_score": 86.5,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-12-12",
+    "hrv": 66.9,
+    "resting_hr": 58.3,
+    "sleep_score": 78.3,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-12-13",
+    "hrv": 64.3,
+    "resting_hr": 62.6,
+    "sleep_score": 82.1,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-12-14",
+    "hrv": 68.2,
+    "resting_hr": 61.2,
+    "sleep_score": 81.7,
+    "sleep_hours": 8.1
+  },
+  {
+    "date": "2024-12-15",
+    "hrv": 58.9,
+    "resting_hr": 60.6,
+    "sleep_score": 74.9,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-12-16",
+    "hrv": 62.0,
+    "resting_hr": 63.2,
+    "sleep_score": 79.9,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2024-12-17",
+    "hrv": 57.6,
+    "resting_hr": 59.7,
+    "sleep_score": 84.7,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-12-18",
+    "hrv": 61.8,
+    "resting_hr": 67.1,
+    "sleep_score": 79.6,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-12-19",
+    "hrv": 56.7,
+    "resting_hr": 58.6,
+    "sleep_score": 74.3,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2024-12-20",
+    "hrv": 57.6,
+    "resting_hr": 67.0,
+    "sleep_score": 74.1,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2024-12-21",
+    "hrv": 58.3,
+    "resting_hr": 59.2,
+    "sleep_score": 78.3,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-12-22",
+    "hrv": 61.3,
+    "resting_hr": 70.0,
+    "sleep_score": 77.3,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2024-12-23",
+    "hrv": 56.5,
+    "resting_hr": 61.0,
+    "sleep_score": 78.3,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-12-24",
+    "hrv": 50.3,
+    "resting_hr": 63.9,
+    "sleep_score": 78.7,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2024-12-25",
+    "hrv": 49.1,
+    "resting_hr": 65.4,
+    "sleep_score": 72.6,
+    "sleep_hours": 8.5
+  },
+  {
+    "date": "2024-12-26",
+    "hrv": 49.4,
+    "resting_hr": 70.8,
+    "sleep_score": 74.5,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2024-12-27",
+    "hrv": 52.0,
+    "resting_hr": 69.1,
+    "sleep_score": 77.9,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2024-12-28",
+    "hrv": 49.4,
+    "resting_hr": 58.4,
+    "sleep_score": 79.9,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-12-29",
+    "hrv": 60.5,
+    "resting_hr": 64.7,
+    "sleep_score": 86.4,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2024-12-30",
+    "hrv": 62.8,
+    "resting_hr": 62.5,
+    "sleep_score": 78.0,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2024-12-31",
+    "hrv": 56.4,
+    "resting_hr": 71.4,
+    "sleep_score": 80.3,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2025-01-01",
+    "hrv": 62.1,
+    "resting_hr": 62.5,
+    "sleep_score": 83.2,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2025-01-02",
+    "hrv": 56.8,
+    "resting_hr": 58.2,
+    "sleep_score": 83.0,
+    "sleep_hours": 8.1
+  },
+  {
+    "date": "2025-01-03",
+    "hrv": 56.8,
+    "resting_hr": 60.6,
+    "sleep_score": 77.9,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2025-01-04",
+    "hrv": 59.3,
+    "resting_hr": 59.8,
+    "sleep_score": 87.0,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2025-01-05",
+    "hrv": 67.5,
+    "resting_hr": 68.7,
+    "sleep_score": 88.7,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2025-01-06",
+    "hrv": 67.9,
+    "resting_hr": 59.8,
+    "sleep_score": 79.7,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2025-01-07",
+    "hrv": 61.2,
+    "resting_hr": 60.7,
+    "sleep_score": 83.8,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2025-01-08",
+    "hrv": 54.3,
+    "resting_hr": 59.4,
+    "sleep_score": 76.6,
+    "sleep_hours": 6.5
+  },
+  {
+    "date": "2025-01-09",
+    "hrv": 54.2,
+    "resting_hr": 61.9,
+    "sleep_score": 74.7,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2025-01-10",
+    "hrv": 58.0,
+    "resting_hr": 68.7,
+    "sleep_score": 73.8,
+    "sleep_hours": 8.1
+  },
+  {
+    "date": "2025-01-11",
+    "hrv": 61.8,
+    "resting_hr": 65.1,
+    "sleep_score": 74.2,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2025-01-12",
+    "hrv": 55.4,
+    "resting_hr": 61.0,
+    "sleep_score": 77.3,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2025-01-13",
+    "hrv": 58.2,
+    "resting_hr": 62.0,
+    "sleep_score": 78.9,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2025-01-14",
+    "hrv": 56.3,
+    "resting_hr": 71.7,
+    "sleep_score": 80.2,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2025-01-15",
+    "hrv": 61.2,
+    "resting_hr": 63.1,
+    "sleep_score": 82.6,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2025-01-16",
+    "hrv": 55.0,
+    "resting_hr": 71.7,
+    "sleep_score": 77.7,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2025-01-17",
+    "hrv": 55.6,
+    "resting_hr": 61.3,
+    "sleep_score": 83.1,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2025-01-18",
+    "hrv": 60.1,
+    "resting_hr": 63.0,
+    "sleep_score": 82.6,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2025-01-19",
+    "hrv": 55.0,
+    "resting_hr": 71.2,
+    "sleep_score": 78.9,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2025-01-20",
+    "hrv": 61.8,
+    "resting_hr": 60.1,
+    "sleep_score": 77.6,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2025-01-21",
+    "hrv": 54.3,
+    "resting_hr": 64.9,
+    "sleep_score": 71.4,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2025-01-22",
+    "hrv": 51.1,
+    "resting_hr": 64.4,
+    "sleep_score": 72.8,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2025-01-23",
+    "hrv": 51.9,
+    "resting_hr": 67.2,
+    "sleep_score": 70.3,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2025-01-24",
+    "hrv": 51.1,
+    "resting_hr": 66.6,
+    "sleep_score": 74.9,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2025-01-25",
+    "hrv": 54.7,
+    "resting_hr": 58.4,
+    "sleep_score": 73.2,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2025-01-26",
+    "hrv": 59.4,
+    "resting_hr": 58.8,
+    "sleep_score": 87.9,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2025-01-27",
+    "hrv": 63.0,
+    "resting_hr": 65.5,
+    "sleep_score": 77.4,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2025-01-28",
+    "hrv": 63.9,
+    "resting_hr": 66.0,
+    "sleep_score": 80.5,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2025-01-29",
+    "hrv": 58.7,
+    "resting_hr": 62.8,
+    "sleep_score": 82.0,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2025-01-30",
+    "hrv": 62.7,
+    "resting_hr": 58.7,
+    "sleep_score": 82.4,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2025-01-31",
+    "hrv": 61.7,
+    "resting_hr": 61.8,
+    "sleep_score": 82.9,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2025-02-01",
+    "hrv": 60.0,
+    "resting_hr": 62.4,
+    "sleep_score": 79.6,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2025-02-02",
+    "hrv": 68.0,
+    "resting_hr": 60.6,
+    "sleep_score": 85.5,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2025-02-03",
+    "hrv": 68.5,
+    "resting_hr": 60.8,
+    "sleep_score": 86.7,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2025-02-04",
+    "hrv": 67.8,
+    "resting_hr": 70.8,
+    "sleep_score": 82.9,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2025-02-05",
+    "hrv": 56.1,
+    "resting_hr": 59.6,
+    "sleep_score": 80.2,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2025-02-06",
+    "hrv": 57.4,
+    "resting_hr": 61.8,
+    "sleep_score": 83.9,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2025-02-07",
+    "hrv": 60.3,
+    "resting_hr": 62.4,
+    "sleep_score": 73.7,
+    "sleep_hours": 8.3
+  },
+  {
+    "date": "2025-02-08",
+    "hrv": 57.2,
+    "resting_hr": 61.3,
+    "sleep_score": 83.1,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2025-02-09",
+    "hrv": 58.8,
+    "resting_hr": 69.7,
+    "sleep_score": 82.3,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2025-02-10",
+    "hrv": 55.4,
+    "resting_hr": 61.6,
+    "sleep_score": 84.6,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2025-02-11",
+    "hrv": 57.8,
+    "resting_hr": 69.0,
+    "sleep_score": 76.0,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2025-02-12",
+    "hrv": 60.7,
+    "resting_hr": 67.7,
+    "sleep_score": 80.9,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2025-02-13",
+    "hrv": 59.1,
+    "resting_hr": 67.6,
+    "sleep_score": 81.4,
+    "sleep_hours": 8.3
+  },
+  {
+    "date": "2025-02-14",
+    "hrv": 61.4,
+    "resting_hr": 71.1,
+    "sleep_score": 84.0,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2025-02-15",
+    "hrv": 61.0,
+    "resting_hr": 58.5,
+    "sleep_score": 82.2,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2025-02-16",
+    "hrv": 61.4,
+    "resting_hr": 70.9,
+    "sleep_score": 77.0,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2025-02-17",
+    "hrv": 57.4,
+    "resting_hr": 62.6,
+    "sleep_score": 81.8,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2025-02-18",
+    "hrv": 48.0,
+    "resting_hr": 66.1,
+    "sleep_score": 71.4,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2025-02-19",
+    "hrv": 54.3,
+    "resting_hr": 68.3,
+    "sleep_score": 72.8,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2025-02-20",
+    "hrv": 51.1,
+    "resting_hr": 66.0,
+    "sleep_score": 73.5,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2025-02-21",
+    "hrv": 50.1,
+    "resting_hr": 66.7,
+    "sleep_score": 79.2,
+    "sleep_hours": 6.6
+  },
+  {
+    "date": "2025-02-22",
+    "hrv": 48.1,
+    "resting_hr": 71.0,
+    "sleep_score": 75.3,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2025-02-23",
+    "hrv": 61.7,
+    "resting_hr": 68.9,
+    "sleep_score": 78.3,
+    "sleep_hours": 8.2
+  },
+  {
+    "date": "2025-02-24",
+    "hrv": 64.0,
+    "resting_hr": 63.9,
+    "sleep_score": 79.4,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2025-02-25",
+    "hrv": 60.9,
+    "resting_hr": 67.6,
+    "sleep_score": 86.9,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2025-02-26",
+    "hrv": 61.5,
+    "resting_hr": 68.3,
+    "sleep_score": 84.6,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2025-02-27",
+    "hrv": 59.8,
+    "resting_hr": 67.4,
+    "sleep_score": 80.3,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2025-02-28",
+    "hrv": 56.0,
+    "resting_hr": 71.7,
+    "sleep_score": 82.1,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2025-03-01",
+    "hrv": 57.4,
+    "resting_hr": 64.6,
+    "sleep_score": 81.9,
+    "sleep_hours": 7.2
+  },
+  {
+    "date": "2025-03-02",
+    "hrv": 65.0,
+    "resting_hr": 63.0,
+    "sleep_score": 89.7,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2025-03-03",
+    "hrv": 66.9,
+    "resting_hr": 65.8,
+    "sleep_score": 83.9,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2025-03-04",
+    "hrv": 62.5,
+    "resting_hr": 64.6,
+    "sleep_score": 78.7,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2025-03-05",
+    "hrv": 57.5,
+    "resting_hr": 64.4,
+    "sleep_score": 84.9,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2025-03-06",
+    "hrv": 60.9,
+    "resting_hr": 65.1,
+    "sleep_score": 75.2,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2025-03-07",
+    "hrv": 57.3,
+    "resting_hr": 67.5,
+    "sleep_score": 73.9,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2025-03-08",
+    "hrv": 57.2,
+    "resting_hr": 69.7,
+    "sleep_score": 80.1,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2025-03-09",
+    "hrv": 57.6,
+    "resting_hr": 58.1,
+    "sleep_score": 84.5,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2025-03-10",
+    "hrv": 56.6,
+    "resting_hr": 71.4,
+    "sleep_score": 81.8,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2025-03-11",
+    "hrv": 60.4,
+    "resting_hr": 66.4,
+    "sleep_score": 81.9,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2025-03-12",
+    "hrv": 54.2,
+    "resting_hr": 63.6,
+    "sleep_score": 75.5,
+    "sleep_hours": 7.3
+  },
+  {
+    "date": "2025-03-13",
+    "hrv": 59.9,
+    "resting_hr": 66.4,
+    "sleep_score": 84.1,
+    "sleep_hours": 8.3
+  },
+  {
+    "date": "2025-03-14",
+    "hrv": 51.6,
+    "resting_hr": 66.4,
+    "sleep_score": 73.7,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2025-03-15",
+    "hrv": 48.7,
+    "resting_hr": 67.5,
+    "sleep_score": 75.2,
+    "sleep_hours": 8.4
+  },
+  {
+    "date": "2025-03-16",
+    "hrv": 50.3,
+    "resting_hr": 64.7,
+    "sleep_score": 74.2,
+    "sleep_hours": 8.3
+  },
+  {
+    "date": "2025-03-17",
+    "hrv": 50.4,
+    "resting_hr": 58.6,
+    "sleep_score": 69.6,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2025-03-18",
+    "hrv": 50.8,
+    "resting_hr": 58.2,
+    "sleep_score": 76.0,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2025-03-19",
+    "hrv": 59.3,
+    "resting_hr": 68.1,
+    "sleep_score": 84.5,
+    "sleep_hours": 7.1
+  },
+  {
+    "date": "2025-03-20",
+    "hrv": 56.6,
+    "resting_hr": 67.4,
+    "sleep_score": 87.8,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2025-03-21",
+    "hrv": 57.4,
+    "resting_hr": 70.2,
+    "sleep_score": 81.7,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2025-03-22",
+    "hrv": 58.4,
+    "resting_hr": 67.7,
+    "sleep_score": 85.8,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2025-03-23",
+    "hrv": 56.7,
+    "resting_hr": 69.4,
+    "sleep_score": 77.6,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2025-03-24",
+    "hrv": 61.2,
+    "resting_hr": 69.1,
+    "sleep_score": 81.2,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2025-03-25",
+    "hrv": 56.2,
+    "resting_hr": 67.8,
+    "sleep_score": 78.0,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2025-03-26",
+    "hrv": 65.7,
+    "resting_hr": 69.7,
+    "sleep_score": 80.4,
+    "sleep_hours": 7.6
+  },
+  {
+    "date": "2025-03-27",
+    "hrv": 68.8,
+    "resting_hr": 66.3,
+    "sleep_score": 88.2,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2025-03-28",
+    "hrv": 62.9,
+    "resting_hr": 66.1,
+    "sleep_score": 78.7,
+    "sleep_hours": 6.5
+  },
+  {
+    "date": "2025-03-29",
+    "hrv": 57.6,
+    "resting_hr": 68.2,
+    "sleep_score": 78.2,
+    "sleep_hours": 6.8
+  },
+  {
+    "date": "2025-03-30",
+    "hrv": 61.4,
+    "resting_hr": 64.6,
+    "sleep_score": 83.2,
+    "sleep_hours": 7.9
+  },
+  {
+    "date": "2025-03-31",
+    "hrv": 61.7,
+    "resting_hr": 68.3,
+    "sleep_score": 83.0,
+    "sleep_hours": 7.8
+  },
+  {
+    "date": "2025-04-01",
+    "hrv": 59.3,
+    "resting_hr": 66.5,
+    "sleep_score": 74.5,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2025-04-02",
+    "hrv": 62.0,
+    "resting_hr": 67.5,
+    "sleep_score": 77.3,
+    "sleep_hours": 7.0
+  },
+  {
+    "date": "2025-04-03",
+    "hrv": 58.9,
+    "resting_hr": 61.6,
+    "sleep_score": 74.4,
+    "sleep_hours": 6.9
+  },
+  {
+    "date": "2025-04-04",
+    "hrv": 60.8,
+    "resting_hr": 59.5,
+    "sleep_score": 83.5,
+    "sleep_hours": 7.7
+  },
+  {
+    "date": "2025-04-05",
+    "hrv": 60.6,
+    "resting_hr": 66.8,
+    "sleep_score": 73.5,
+    "sleep_hours": 6.7
+  },
+  {
+    "date": "2025-04-06",
+    "hrv": 59.7,
+    "resting_hr": 70.2,
+    "sleep_score": 82.1,
+    "sleep_hours": 7.5
+  },
+  {
+    "date": "2025-04-07",
+    "hrv": 51.5,
+    "resting_hr": 61.4,
+    "sleep_score": 74.0,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2025-04-08",
+    "hrv": 48.7,
+    "resting_hr": 63.0,
+    "sleep_score": 73.5,
+    "sleep_hours": 8.0
+  },
+  {
+    "date": "2025-04-09",
+    "hrv": 51.3,
+    "resting_hr": 69.9,
+    "sleep_score": 73.9,
+    "sleep_hours": 7.4
+  },
+  {
+    "date": "2025-04-10",
+    "hrv": 48.7,
+    "resting_hr": 60.3,
+    "sleep_score": 72.8,
+    "sleep_hours": 8.5
+  }
+]

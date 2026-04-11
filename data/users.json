@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Alex",
+    "cycle_length_avg": 28,
+    "fitness_level": "intermediate",
+    "workout_preferences": {
+      "likes": [
+        "yoga",
+        "pilates",
+        "walking"
+      ],
+      "dislikes": [
+        "swimming",
+        "HIIT"
+      ]
+    },
+    "profile_summary": "GENERAL\n- Fitness level: intermediate\n- Preferred session length: 30 min\n- Always avoid: swimming, HIIT\n- Loves: yoga, pilates, walking\n\nMENSTRUAL PHASE (days ~1\u20135)\n- Typical energy: low\n- Default workouts: yin yoga, walking, mat pilates, foam rolling\n- Personal notes: prefers rest or very light movement on day 1; short walks work well from day 2 onward\n\nFOLLICULAR PHASE (days ~6\u201313)\n- Typical energy: rising\n- Default workouts: running, cardio, power vinyasa, pilates\n- Personal notes: enjoys increasing intensity through the week; vinyasa rated consistently well here\n\nOVULATORY PHASE (days ~14\u201316)\n- Typical energy: peak\n- Default workouts: cycling, cardio, crossfit, bootcamp\n- Personal notes: peak performance window; prefers structured classes over solo cardio\n\nLUTEAL PHASE (days ~17\u201328)\n- Typical energy: declining, especially days 20\u201328\n- Default workouts: yoga, pilates, low incline walking, barre\n- Personal notes: energy drops noticeably from day 20; consistently rates strength training and cardio below 3/5 in this window; yoga and pilates rated 4.5+/5 here; prefers shorter sessions (25\u201330 min)\n\nRECENT FEEDBACK\n- \ud83d\udc4d yin yoga (luteal day 24)\n- \ud83d\udc4d walking (luteal day 21)\n- \ud83d\udc4e strength training (luteal day 22) \u2014 felt too heavy\n- \ud83d\udc4d power vinyasa (follicular day 10)\n- \ud83d\udc4e cardio (luteal day 19) \u2014 low energy"
+  },
+  {
+    "id": 2,
+    "name": "Jordan",
+    "cycle_length_avg": 26,
+    "fitness_level": "advanced",
+    "workout_preferences": {
+      "likes": [
+        "strength training",
+        "HIIT",
+        "cycling"
+      ],
+      "dislikes": [
+        "yoga",
+        "barre"
+      ]
+    },
+    "profile_summary": "GENERAL\n- Fitness level: advanced\n- Preferred session length: 40 min\n- Always avoid: yoga, barre\n- Loves: strength training, HIIT, cycling\n\nMENSTRUAL PHASE (days ~1\u20135)\n- Typical energy: moderate\n- Default workouts: strength training, cycling, low incline walking\n- Personal notes: can handle moderate intensity even during period; prefers strength over cardio on day 1\u20132\n\nFOLLICULAR PHASE (days ~6\u201312)\n- Typical energy: high\n- Default workouts: HIIT, strength training, cycling, running\n- Personal notes: strong performance; responds well to progressive overload this week\n\nOVULATORY PHASE (days ~13\u201315)\n- Typical energy: peak\n- Default workouts: HIIT, crossfit, bootcamp, cycling\n- Personal notes: best performance of the cycle; PRs often happen here\n\nLUTEAL PHASE (days ~16\u201326)\n- Typical energy: high (unlike typical patterns)\n- Default workouts: strength training, HIIT, cycling\n- Personal notes: maintains high intensity throughout luteal \u2014 rated HIIT and strength 4+/5 even in late luteal; this is atypical but consistent across her history\n\nRECENT FEEDBACK\n- \ud83d\udc4d HIIT (luteal day 20)\n- \ud83d\udc4d strength training (luteal day 23)\n- \ud83d\udc4d cycling (luteal day 18)\n- \ud83d\udc4e walking (follicular day 8) \u2014 too easy\n- \ud83d\udc4d crossfit (ovulatory day 14)"
+  }
+]

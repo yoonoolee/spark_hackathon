@@ -1,0 +1,3434 @@
+[
+  {
+    "date": "2024-04-11",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-12",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-13",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-14",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-15",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-04-16",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-17",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-18",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-21",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-22",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-23",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-24",
+    "suggestion": {
+      "type": "bootcamp",
+      "description": "high bootcamp",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Bootcamp session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-25",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-26",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-27",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-28",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-29",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-04-30",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-01",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-02",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-03",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-04",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-05-05",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-06",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-07",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-08",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-05-09",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-10",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-11",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-12",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-13",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-15",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-16",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-17",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-18",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-19",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-20",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-22",
+    "suggestion": {
+      "type": "bootcamp",
+      "description": "high bootcamp",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Bootcamp session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-05-23",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-24",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-27",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-28",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-29",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-30",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-05-31",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-01",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-02",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-03",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-04",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-06-05",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-06-06",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-07",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-06-09",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-10",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-06-11",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-12",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-14",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-16",
+    "suggestion": {
+      "type": "bootcamp",
+      "description": "high bootcamp",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Bootcamp session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-06-17",
+    "suggestion": {
+      "type": "crossfit",
+      "description": "high crossfit",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Crossfit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-18",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-19",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-20",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-21",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-22",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-23",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-24",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-25",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-26",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-27",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-28",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-29",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-06-30",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-01",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-02",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-03",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-04",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-06",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-07-07",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-08",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-07-09",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-10",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-11",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-12",
+    "suggestion": {
+      "type": "crossfit",
+      "description": "high crossfit",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Crossfit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-13",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-15",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-16",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-17",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-18",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-19",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-21",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-22",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-07-23",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-24",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-07-25",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-29",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-30",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-07-31",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-08-02",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-03",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-04",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-05",
+    "suggestion": {
+      "type": "bootcamp",
+      "description": "high bootcamp",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Bootcamp session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-08-06",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-08",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-09",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-08-10",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-11",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-08-12",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-13",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-14",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-15",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-16",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-08-17",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-18",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-19",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-20",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-08-21",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-22",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-23",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-24",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-25",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-27",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-08-28",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-08-30",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-02",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-03",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-04",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-05",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-07",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-08",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-09",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-11",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-12",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-13",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-14",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-09-15",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-17",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-09-18",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-19",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-20",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-21",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-22",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-23",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-24",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-26",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-27",
+    "suggestion": {
+      "type": "crossfit",
+      "description": "high crossfit",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Crossfit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-28",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-29",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-09-30",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-02",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-03",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-05",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-06",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-10-08",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-10-09",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-11",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-10-12",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-10-13",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-14",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-16",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-17",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-10-18",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-19",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-20",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-21",
+    "suggestion": {
+      "type": "bootcamp",
+      "description": "high bootcamp",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Bootcamp session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-22",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-23",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-24",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-25",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-26",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-27",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-28",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-29",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-30",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-10-31",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-01",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-02",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-04",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-05",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-06",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-07",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-11-08",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-09",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-10",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-11",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-12",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-14",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-15",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-16",
+    "suggestion": {
+      "type": "bootcamp",
+      "description": "high bootcamp",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Bootcamp session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-17",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-18",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-19",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-20",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-21",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-22",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-23",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-24",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-25",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-26",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-27",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-28",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-29",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-11-30",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-01",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-02",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-03",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-04",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-12-05",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-06",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-07",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-12-08",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-12-10",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-11",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-13",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-14",
+    "suggestion": {
+      "type": "bootcamp",
+      "description": "high bootcamp",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Bootcamp session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-15",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-16",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-17",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-12-18",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-19",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-20",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-21",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-22",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-25",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-26",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-12-27",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-28",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2024-12-29",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2024-12-31",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-01",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-02",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-04",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-05",
+    "suggestion": {
+      "type": "bootcamp",
+      "description": "high bootcamp",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Bootcamp session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-01-06",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-07",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-08",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-09",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-10",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-11",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-12",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-13",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-14",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-01-15",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-16",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-17",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-01-18",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-01-19",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-20",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-21",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-01-22",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-23",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-01-24",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-26",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-27",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-29",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-01-31",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-01",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-02",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-03",
+    "suggestion": {
+      "type": "crossfit",
+      "description": "high crossfit",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Crossfit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-04",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-05",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-06",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-07",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-08",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-09",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-10",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-02-11",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-02-12",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-13",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-14",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-16",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-17",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-18",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-19",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-20",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-21",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-23",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-24",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-25",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-26",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-02-28",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-01",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-02",
+    "suggestion": {
+      "type": "bootcamp",
+      "description": "high bootcamp",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Bootcamp session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-03-04",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-05",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-06",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-08",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-10",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-11",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-12",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-13",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-14",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-03-15",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-16",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-17",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-18",
+    "suggestion": {
+      "type": "pilates",
+      "description": "medium pilates",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Pilates session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-03-19",
+    "suggestion": {
+      "type": "running",
+      "description": "medium running",
+      "duration_mins": 45,
+      "intensity": "medium",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-20",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "medium HIIT",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-23",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-24",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-26",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-27",
+    "suggestion": {
+      "type": "bootcamp",
+      "description": "high bootcamp",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Bootcamp session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-03-28",
+    "suggestion": {
+      "type": "bootcamp",
+      "description": "high bootcamp",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Bootcamp session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-03-29",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-03-31",
+    "suggestion": {
+      "type": "HIIT",
+      "description": "high HIIT",
+      "duration_mins": 40,
+      "intensity": "high",
+      "specific_suggestion": "Hiit session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-04-01",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-04-02",
+    "suggestion": {
+      "type": "strength training",
+      "description": "high strength training",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-04-03",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 30,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-04-04",
+    "suggestion": {
+      "type": "running",
+      "description": "high running",
+      "duration_mins": 50,
+      "intensity": "high",
+      "specific_suggestion": "Running session at full effort"
+    },
+    "liked": false
+  },
+  {
+    "date": "2025-04-06",
+    "suggestion": {
+      "type": "cycling",
+      "description": "high cycling",
+      "duration_mins": 45,
+      "intensity": "high",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-04-08",
+    "suggestion": {
+      "type": "cycling",
+      "description": "medium cycling",
+      "duration_mins": 50,
+      "intensity": "medium",
+      "specific_suggestion": "Cycling session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-04-09",
+    "suggestion": {
+      "type": "low incline walking",
+      "description": "medium low incline walking",
+      "duration_mins": 30,
+      "intensity": "medium",
+      "specific_suggestion": "Low incline walking session at full effort"
+    },
+    "liked": true
+  },
+  {
+    "date": "2025-04-10",
+    "suggestion": {
+      "type": "strength training",
+      "description": "medium strength training",
+      "duration_mins": 40,
+      "intensity": "medium",
+      "specific_suggestion": "Strength training session at full effort"
+    },
+    "liked": true
+  }
+]
