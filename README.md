@@ -128,6 +128,110 @@ Most cycle apps give generic phase advice ("it's your luteal phase, do yoga"). S
 
 ---
 
+## Sample API Response (`GET /users/1/suggest`)
+
+```json
+{
+  "suggestion_id": 42,
+  "date": "2025-04-11",
+  "checkin_streak": 7,
+  "cycle": {
+    "cycle_day": 22,
+    "phase": "luteal",
+    "days_until_period": 6,
+    "cycle_length_avg": 28
+  },
+  "weather": {
+    "temp_f": 57,
+    "condition": "sunny",
+    "season": "spring",
+    "outdoor_friendly": true
+  },
+  "top": {
+    "rank": 1,
+    "type": "yin yoga",
+    "description": "restorative yin flow",
+    "duration_mins": 60,
+    "intensity": "low",
+    "specific_suggestion": "Floor-based holds 3–5 min, focus on hips and lower back",
+    "reasoning": {
+      "energy": "low (2/5)",
+      "hrv": "below average (-16%)",
+      "weather": "sunny, outdoors ok"
+    }
+  },
+  "suggestions": [
+    {
+      "rank": 1,
+      "type": "yin yoga",
+      "description": "restorative yin flow",
+      "duration_mins": 60,
+      "intensity": "low",
+      "specific_suggestion": "Floor-based holds 3–5 min, focus on hips and lower back",
+      "reasoning": {
+        "energy": "low (2/5)",
+        "hrv": "below average (-16%)",
+        "weather": "sunny, outdoors ok"
+      }
+    },
+    {
+      "rank": 2,
+      "type": "walking",
+      "description": "easy flat walk",
+      "duration_mins": 30,
+      "intensity": "low",
+      "specific_suggestion": "Flat route, comfortable pace — good day to get outside",
+      "reasoning": {
+        "energy": "low, manageable",
+        "hrv": "rest day signal",
+        "weather": "57°F sunny, ideal"
+      }
+    },
+    {
+      "rank": 3,
+      "type": "pilates",
+      "description": "gentle mat core work",
+      "duration_mins": 45,
+      "intensity": "low",
+      "specific_suggestion": "Core and glute focus, skip heavy loading today",
+      "reasoning": {
+        "energy": "low but stable",
+        "hrv": "below baseline",
+        "weather": "indoors fine"
+      }
+    },
+    {
+      "rank": 4,
+      "type": "foam rolling",
+      "description": "full body recovery",
+      "duration_mins": 15,
+      "intensity": "low",
+      "specific_suggestion": "Legs, hips, upper back — 60 sec per area",
+      "reasoning": {
+        "energy": "very low (2/5)",
+        "hrv": "recovery needed",
+        "weather": "indoors"
+      }
+    },
+    {
+      "rank": 5,
+      "type": "mat pilates",
+      "description": "slow flow pilates",
+      "duration_mins": 45,
+      "intensity": "low",
+      "specific_suggestion": "Breathing-focused flow, no high-intensity transitions",
+      "reasoning": {
+        "energy": "low, gentle movement",
+        "hrv": "below luteal avg",
+        "weather": "indoors ok"
+      }
+    }
+  ]
+}
+```
+
+---
+
 ## User Profile (NL, structured by phase)
 
 Stored in `users.profile_summary`. Starts from science defaults, updated after every check-in and feedback via a small Claude call. Each phase is independent.
