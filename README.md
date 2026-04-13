@@ -53,10 +53,10 @@ Open a new terminal:
 cd frontend
 
 # Install dependencies
-pnpm install
+npm install
 
 # Start the dev server
-pnpm dev
+npm run dev
 # → running at http://localhost:5173
 ```
 
