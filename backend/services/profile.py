@@ -3,7 +3,8 @@ import os
 from database import get_user, update_profile_summary
 from services.cycle import PHASE_BASELINES
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+def _client():
+    return anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
 
 def build_cold_start_profile(user: dict) -> str:
@@ -95,7 +96,7 @@ Rules:
 - Do not invent data — only reflect what the user has actually reported
 - Return ONLY the updated profile text, no explanation"""
 
-    response = client.messages.create(
+    response = _client().messages.create(
         model="claude-sonnet-4-6",
         max_tokens=800,
         messages=[{"role": "user", "content": prompt}]

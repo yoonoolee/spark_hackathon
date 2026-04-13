@@ -3,7 +3,8 @@ import json
 import os
 from services.cycle import PHASE_BASELINES
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+def _client():
+    return anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
 
 def build_prompt(ctx: dict) -> str:
@@ -136,7 +137,7 @@ Return only the JSON array, no explanation or markdown."""
 def get_suggestions(ctx: dict) -> list:
     prompt = build_prompt(ctx)
 
-    response = client.messages.create(
+    response = _client().messages.create(
         model="claude-sonnet-4-6",
         max_tokens=1500,
         messages=[{"role": "user", "content": prompt}]
